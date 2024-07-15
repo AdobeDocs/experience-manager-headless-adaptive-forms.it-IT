@@ -5,7 +5,7 @@ hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
 source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '489'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ Benvenuti in Experience Manager Headless moduli adattivi versione precedente per
 
 Puoi utilizzare i moduli adattivi headless di Adobe Experience Manager per creare applicazioni Forms utilizzando framework dell’interfaccia utente front-end come React, Angular e altro ancora e utilizzare Adaptive Forms Web SDK per funzionalità come la gestione dello stato, la convalida e le integrazioni con vari altri punti di contatto.
 
-La versione precedente di Adobe consente di accedere all’utilizzo di moduli adattivi headless in una [ambiente di sviluppo locale](setup-development-environment.md). Puoi utilizzare l’ambiente di sviluppo locale per generare e testare moduli adattivi headless.
+La versione precedente di Adobe consente di accedere all&#39;utilizzo di moduli adattivi headless in un [ambiente di sviluppo locale](setup-development-environment.md). Puoi utilizzare l’ambiente di sviluppo locale per generare e testare moduli adattivi headless.
 
 I moduli adattivi headless vengono costantemente migliorati. Per rimanere aggiornato sugli sviluppi più recenti, visita questa pagina regolarmente. Questa pagina fornisce informazioni sull’accesso in anteprima, sulle versioni più recenti, sulle nuove funzioni, sui miglioramenti, sulle correzioni di bug, sulle funzionalità obsolete, su istruzioni speciali e sui piani futuri di modifica.
 
@@ -44,9 +44,9 @@ I moduli adattivi headless vengono costantemente migliorati. Per rimanere aggior
 
 Nel percorso per portare all’utente i moduli adattivi headless di Adobe Experience Manager, nella prima versione sono disponibili i seguenti artefatti:
 
-### SDK as a Cloud Service per AEM Forms
+### AEM FORMS AS A CLOUD SERVICE SDK
 
-AEM Forms as a Cloud Service SDK per facilitare la creazione, l’archiviazione e il recupero di moduli adattivi headless. Consente inoltre di precompilare, convalidare le regole lato server e inviare servizi per moduli adattivi headless.
+AEM Forms as a Cloud Service SDK per aiutarti a creare, archiviare e recuperare moduli adattivi headless. Consente inoltre di precompilare, convalidare le regole lato server e inviare servizi per moduli adattivi headless.
 
 ### Forms Web SDK
 
@@ -60,25 +60,25 @@ Forms Web SDK fornisce le API per convalidare i vincoli applicati ai vari campi 
 
 #### Storybook
 
-[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) offre una panoramica dei diversi componenti dei moduli adattivi headless. Inoltre, fornisce un elenco di tutti i componenti supportati, con le proprietà e i vincoli corrispondenti.
+[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fornisce una panoramica dei diversi componenti dei moduli adattivi headless. Inoltre, fornisce un elenco di tutti i componenti supportati, con le proprietà e i vincoli corrispondenti.
 
 ### Componente core Forms
 
 <!-- Forms components are the structural elements that constitute the content of the form being authored. These components provide various form fields and ability to customize those fields. -->
 
-I componenti core sono un set di componenti WCM (Web Content Management) standardizzati che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei moduli. Il componente Contenitore Forms è un componente core. Consente di incorporare ed eseguire il rendering di una struttura JSON di moduli adattivi headless nell’editor Forms adattivo dell’SDK as a Cloud Service di Forms.
+I componenti core sono un set di componenti WCM (Web Content Management) standardizzati che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei moduli. Il componente Contenitore Forms è un componente core. Consente di incorporare ed eseguire il rendering di una struttura JSON di moduli adattivi headless nell’editor Forms adattivo di Forms as a Cloud Service SDK.
 
 ### Specifiche di Adaptive Forms V2
 
-La specifica dei moduli adattivi headless fornisce informazioni dettagliate su tutti i componenti, i vincoli e i metodi disponibili per definire i moduli adattivi headless. La specifica è disponibile in [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf) formato.
+La specifica dei moduli adattivi headless fornisce informazioni dettagliate su tutti i componenti, i vincoli e i metodi disponibili per definire i moduli adattivi headless. La specifica è disponibile in formato [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
 
 ### API HTTP e JS
 
-[API HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) consente di elencare, recuperare, convalidare, inviare e tenere traccia dello stato di invio dei moduli headless. [API JS](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) consente di utilizzare moduli adattivi headless con qualsiasi framework di interfaccia utente basato su JavaScript.
+[API HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) ti consentono di elencare, recuperare, convalidare, inviare e tenere traccia dello stato di invio dei moduli headless. [API JS](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) consente di utilizzare moduli adattivi headless con qualsiasi framework di interfaccia utente basato su JavaScript.
 
 ### Estensione codice di Visual Studio
 
-[Estensione codice di Visual Studio](visual-studio-code-extension-for-headless-adaptive-forms.md) per creare una struttura JSON valida. Fornisce il supporto IntelliSense e la convalida per la struttura JSON dei moduli insieme a funzioni comuni come l’aggiunta, l’eliminazione o la ridenominazione di componenti di una struttura JSON.
+[Estensione del codice Visual Studio](visual-studio-code-extension-for-headless-adaptive-forms.md) per creare una struttura JSON valida. Fornisce il supporto IntelliSense e la convalida per la struttura JSON dei moduli insieme a funzioni comuni come l’aggiunta, l’eliminazione o la ridenominazione di componenti di una struttura JSON.
 
 <!-- ## What's next
 

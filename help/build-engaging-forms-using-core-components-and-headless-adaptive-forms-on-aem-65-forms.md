@@ -10,15 +10,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 topic-tags: develop
 hide: true
-exl-id: 46df943c-0622-4b3b-a802-85c39ac6a734
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 62%
+source-wordcount: '2130'
+ht-degree: 58%
 
 ---
 
-# Creare moduli efficaci utilizzando i componenti core e headless Forms adattivo su AEM 6.5 Forms {#build-engaging-forms-using-core-components-and-headless}
+# Costruire Forms coinvolgenti utilizzando componenti core e headless Forms adattivo su AEM 6.5 Forms {#build-engaging-forms-using-core-components-and-headless}
 
 ## Panoramica del workshop {#lab-overview}
 
@@ -38,13 +38,13 @@ Come utilizzare AEM Forms per creare facilmente Forms adattivo utilizzando i Com
 
 Per usare queste mani sul laboratorio:
 
-* Installare [ultima versione di Git](https://git-scm.com/downloads). Se hai poca esperienza con Git, consulta [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Installa la [versione più recente di Git](https://git-scm.com/downloads). Se sei un nuovo utente di Git, vedi [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 * Installa [Node.js 16.13.0 o versione successiva](https://nodejs.org/it/download/). Se hai poca esperienza con Node.js, consulta [Come installare Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
-* [Abilita Forms adattivo headless](enable-headless-adaptive-forms-and-core-components.md) nell’ambiente Forms AEM 6.5.
+* [Abilita Forms adattivo headless](enable-headless-adaptive-forms-and-core-components.md) nell&#39;ambiente Forms AEM 6.5.
 
-* Installa [Codice Microsoft Visual Studio](https://code.visualstudio.com/download) o qualsiasi editor di testo normale. Esempi in un documento utilizzano Microsoft Visual Studio Code.
+* Installa [Microsoft Visual Studio Code](https://code.visualstudio.com/download) o qualsiasi editor di testo normale. Esempi in un documento utilizzano Microsoft Visual Studio Code.
 
 ## Lezione 1 {#lesson-1}
 
@@ -58,7 +58,7 @@ In questa lezione imparerai a conoscere il Forms AEM 6.5 navigando nell’interf
 
 ### Esercizio {#lesson-1-excercise}
 
-1. Apri il browser e immetti l’URL dell’ambiente di authoring di Ad esempio:
+1. Apri il browser e immetti l’URL dell’ambiente di authoring. Ad esempio:
    [https://localhost:4502](https://localhost:4502).
 
 1. Dopo aver effettuato l’accesso, passa all’interfaccia utente di AEM Forms. Fai clic su **Moduli**.
@@ -97,20 +97,20 @@ In questa lezione, in qualità di utente aziendale, crei un modulo adattivo per 
 
 1. Creare un modulo adattivo:
 
-   1. Nella scheda del browser utilizzata nella lezione 1, passa all’interfaccia web di AEM Forms e passa a **Forms** > **Forms e documenti**.
+   1. Nella scheda del browser utilizzata nella lezione 1, passa all&#39;interfaccia Web di AEM Forms e passa a **Forms** > **Forms e documenti**.
 
    1. Fai clic su **Crea** e seleziona Modulo adattivo.
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
-   1. Seleziona la **Vuoto con i Componenti core** modello dalla schermata di selezione del modello come mostrato di seguito e fai clic su **Successivo**.
+   1. Seleziona il modello **Vuoto con Componenti core** dalla schermata di selezione del modello come mostrato di seguito e fai clic su **Avanti**.
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
-   1. Specifica `Contact us` come **Titolo** del modulo. Assicurati che **Nome** del modulo è `contact-us`.
+   1. Specifica `Contact us` come **Titolo** del modulo. Assicurarsi che il **Nome** del modulo sia `contact-us`.
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Fai clic su **Crea**. Viene visualizzata una finestra di dialogo.
 
-   1. Nella finestra di dialogo, fai clic su **Modifica**. Il modulo viene aperto nell’editor di moduli adattivi. Chiudi eventuali pop-up o finestre di dialogo relativi a preferenze o informazioni.
+   1. Nella finestra di dialogo, fai clic su **Modifica**. Il modulo viene aperto nell’editor di moduli adattivi. Ignorare eventuali finestre a comparsa o finestre di dialogo per informazioni o preferenze.
 
    1. Apri il browser Componenti e trascina il componente Pannello al centro dello schermo.
 
@@ -121,15 +121,15 @@ In questa lezione, in qualità di utente aziendale, crei un modulo adattivo per 
       ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
 
 
-   1. Apri il Browser contenuti, fai clic sull’icona delle proprietà del Contenitore della Guida e apri la scheda **Invio** scheda. Seleziona la **Invia all’endpoint REST** Azione di invio, seleziona la **Abilita richiesta POST** e specificare l&#39;endpoint REST creato nella lezione 2 della **URL per richiesta POST** e fare clic sul pulsante **Fine** icona.
+   1. Apri il Browser contenuti, fai clic sull&#39;icona delle proprietà del Contenitore della Guida e apri la scheda **Invio**. Seleziona l&#39;azione di invio **Invia all&#39;endpoint REST**, seleziona l&#39;opzione **Abilita richiesta POST** e specifica l&#39;endpoint REST creato nella lezione 2 nella casella di testo **URL per richiesta POST**, quindi fai clic sull&#39;icona **Fine**.
 
       ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
 
-1. Pubblicare un modulo adattivo:
+1. Publish e modulo adattivo:
 
-   1. Apri l’interfaccia utente dell’AEM e passa a **Forms** > **Forms e documenti**. Seleziona il modulo creato nel passaggio precedente e fai clic su **Pubblica**.
+   1. Apri l&#39;interfaccia utente AEM, passa a **Forms** > **Forms e documenti**. Selezionare il modulo creato nel passaggio precedente e fare clic su **Publish**.
 
-   1. Nella finestra di dialogo Pubblica risorse, fai clic su **Pubblica**. Viene visualizzato il messaggio di operazione riuscita.
+   1. Nella finestra di dialogo Publish Assets, fai clic su **Publish**. Viene visualizzato il messaggio di operazione riuscita.
 
 ## Lezione 3
 
@@ -149,13 +149,13 @@ Configurazione dell’archivio locale del tema:
 
    ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
 
-1. Al prompt dei comandi utilizzare il comando seguente per passare a `c:\git` cartella.
+1. Al prompt dei comandi utilizzare il comando seguente per passare alla cartella `c:\git`.
 
    ```Shell
    cd git
    ```
 
-   Se la cartella non esiste, utilizza `md git` per crearlo.
+   Se la cartella non esiste, utilizzare il comando `md git` per crearla.
 
 1. Per clonare il codice di front-end del tema, utilizza il comando seguente:
 
@@ -176,7 +176,7 @@ Configurazione dell’archivio locale del tema:
 
    ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
 
-1. Rinomina il `env_template` in .env.  Per rinominare il file, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona l’opzione **Rinomina**.
+1. Rinominare il file `env_template` in .env.  Per rinominare il file, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona l’opzione **Rinomina**.
 
    ![](/help/assets/screenshot2028116429.png){width="30%" align="left"}
 
@@ -186,9 +186,9 @@ Configurazione dell’archivio locale del tema:
 
 1. Imposta i seguenti valori per le variabili nel file .env e salva il file:
 
-   * **URL_AEM**: specifica l’URL di un **pubblicare** dell&#39;istanza. Ad esempio `https://localhost:4502/`
+   * **URL_AEM**: specificare l&#39;URL di un&#39;istanza **publish**. Ad esempio `https://localhost:4502/`
 
-   * **MODULO_ADATTIVO_AEM**: specifica il nome del modulo. Esempio: `contact-us`.
+   * **AEM_ADAPTIVE_FORM**: specificare il nome del modulo. Esempio: `contact-us`.
 
    </br>
 
@@ -261,7 +261,7 @@ Configurazione dell’archivio locale utilizzando il progetto iniziale di React:
 
    ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
 
-1. Al prompt dei comandi utilizzare il comando seguente per passare a `c:\git` cartella.
+1. Al prompt dei comandi utilizzare il comando seguente per passare alla cartella `c:\git`.
 
    ```Shell
    cd git
@@ -290,7 +290,7 @@ Configurazione dell’archivio locale utilizzando il progetto iniziale di React:
 
    ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
 
-Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione del 
+Per eseguire il rendering del modulo in hosting nell’ambiente di pubblicazione:
 
 1. Rinomina il file env_template in file .env. Per rinominarlo, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona l’opzione **Rinomina**.
 
@@ -300,9 +300,9 @@ Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione d
 
 1. Imposta i seguenti valori per le variabili nel file .env. Dopo aver aggiornato le variabili, salva il file.
 
-   * **AEM_URL**: specifica l’URL dell’ambiente di pubblicazione del Ad esempio `https://localhost:4503/`
+   * **URL_AEM**: specifica l&#39;URL dell&#39;ambiente di pubblicazione. Ad esempio `https://localhost:4503/`
 
-   * **PERCORSO_MODULO_AEM**: specifica il percorso del modulo adattivo creato nella lezione precedente. Ad esempio `/content/forms/af/contact-us/`
+   * **AEM_FORM_PATH**: specifica il percorso del modulo adattivo creato nella lezione precedente. Ad esempio `/content/forms/af/contact-us/`
 
    </br>
 
@@ -336,25 +336,25 @@ Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione d
 
 Apporta le modifiche al modulo sul server come utente aziendale e visualizza le modifiche riprodotte automaticamente nel modulo headless.
 
-1. Apri l’interfaccia di gestione di AEM Forms nel browser. Ad esempio: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. Apri l’interfaccia di gestione di AEM Forms nel browser. Ad esempio, [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 
-1. Seleziona la **Contattaci** modulo e clic **Modifica.** Il modulo viene aperto nell’editor di Forms adattivo.
+1. Selezionare il modulo **Contattaci** e fare clic su **Modifica.** apre il modulo nell&#39;editor di Forms adattivo.
 
 
-1. Seleziona la **Numero di contatto** e fare clic sul pulsante **Icona Modifica (icona a forma di matita)** nella barra degli strumenti. Se la barra degli strumenti a comparsa non è visibile, passa alla modalità Modifica facendo clic sul pulsante **Modifica** in alto a destra, a sinistra del pulsante **Anteprima**.
+1. Selezionare il campo **Contatto** e fare clic sull&#39;icona **Modifica (icona a forma di matita)** nella barra degli strumenti. Se la barra degli strumenti a comparsa non è visibile, passa alla modalità Modifica facendo clic sul pulsante **Modifica** in alto a destra, a sinistra del pulsante **Anteprima**.
 
    ![](/help/assets/change-field-title.png){width="50%" align="left"}
 
-1. Cambia l’etichetta in **Numero cellulare**. Fai clic su uno spazio vuoto nel modulo per salvare le modifiche apportate.
+1. Cambia l&#39;etichetta in **Mobile Number**. Fai clic su uno spazio vuoto nel modulo per salvare le modifiche apportate.
 
 Pubblichiamo il modulo aggiornato per propagare le modifiche all’ambiente di pubblicazione.
 
-1. Nella scheda dell’interfaccia di gestione di AEM Forms, seleziona il modulo Contattaci e fai clic su **Annulla pubblicazione**. Se non viene visualizzato il pulsante **Annulla pubblicazione**, vai al passaggio 3 per pubblicare le modifiche direttamente.
+1. Nella scheda dell&#39;interfaccia di gestione di AEM Forms, seleziona il modulo Contattaci e fai clic su **Annulla pubblicazione**. Se non viene visualizzato il pulsante **Annulla pubblicazione**, vai al passaggio 3 per pubblicare le modifiche direttamente.
 
 
 1. Fai clic su **Annulla pubblicazione**. Fai clic su **Chiudi** nella rispettiva finestra di dialogo.
 
-1. Dopo che il browser si aggiorna, seleziona il modulo Contattaci e fai clic su **Pubblica**.
+1. Dopo l&#39;aggiornamento del browser, selezionare il modulo Contattaci e fare clic su **Publish**.
 
 
 1. Fai clic su **Pubblica**. Fai clic su **Chiudi** nella rispettiva finestra di dialogo.
@@ -387,7 +387,7 @@ Imposta l’archivio locale utilizzando il progetto iniziale dell’interfaccia 
 
    ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
 
-1. Al prompt dei comandi utilizzare il comando seguente per passare a `c:\git` cartella.
+1. Al prompt dei comandi utilizzare il comando seguente per passare alla cartella `c:\git`.
 
    ```Shell
    cd git
@@ -419,7 +419,7 @@ Imposta l’archivio locale utilizzando il progetto iniziale dell’interfaccia 
 
    ![](/help/assets/screenshot2028126829.png)
 
-Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione del 
+Per eseguire il rendering del modulo in hosting nell’ambiente di pubblicazione:
 
 1. Rinomina il file **env_template** in file **.env**. Per rinominarlo, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona **Rinomina**.
 
@@ -427,9 +427,9 @@ Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione d
 
 1. Imposta i seguenti valori per le variabili nel file .env. Dopo aver aggiornato le variabili, salva il file. Utilizza la combinazione di tasti **CTRL+S** per salvare il file.
 
-   * **AEM_URL**: specifica l’URL dell’ambiente di pubblicazione del Ad esempio: [https://localhost:4503](https://localhost:4503)
+   * **URL_AEM**: specifica l&#39;URL dell&#39;ambiente di pubblicazione. Ad esempio, [https://localhost:4503](https://localhost:4503)
 
-   * **PERCORSO_MODULO_AEM**: specifica il percorso del modulo adattivo creato nella lezione precedente. Ad esempio, /content/forms/af/contact-us/
+   * **AEM_FORM_PATH**: specifica il percorso del modulo adattivo creato nella lezione precedente. Ad esempio, /content/forms/af/contact-us/
 
 
 1. Apri la finestra dei comandi, assicurati di essere nella directory **react-starter-kit-aem-headless forms** ed esegui il comando seguente:
@@ -448,8 +448,7 @@ Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione d
 
    ![](/help/assets/lab65-mui-starter-kit-start.png)
 
-   Il comando avvia un server di sviluppo locale che esegue il rendering della definizione del modulo recuperata da AEM in modo headless utilizzando la libreria front-end 
-dell’interfaccia utente Google Material.
+   Il comando avvia un server di sviluppo locale ed esegue il rendering della definizione del modulo recuperata dall’AEM in modo headless utilizzando la libreria front-end dell’interfaccia utente dei materiali di Google.
 
    >[!NOTE]
    >

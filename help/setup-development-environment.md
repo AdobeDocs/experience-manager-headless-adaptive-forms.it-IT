@@ -5,8 +5,8 @@ hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
 source-git-commit: 41286ff4303e0f4d404deb113fd59d1499768da5
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 3%
+source-wordcount: '686'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ To download the supported version of Adobe Experience Manager as a Cloud Service
 Per installare l’SDK per AEM, il computer locale deve soddisfare i seguenti requisiti minimi:
 
 * [Java Development Kit 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-* [Ultima versione di Git](https://git-scm.com/downloads). Se hai poca esperienza con Git, consulta [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* [Ultima versione di Git](https://git-scm.com/downloads). Se sei un nuovo utente di Git, vedi [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 * [Node.js 16.13.0 o versione successiva](https://nodejs.org/it/download/). Se hai poca esperienza con Node.js, consulta [Come installare Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 * [Maven 3.6 o versione successiva](https://maven.apache.org/download.cgi). Se hai poca esperienza con Maven, consulta [Installazione di Apache Maven](https://maven.apache.org/install.html).
 
@@ -49,8 +49,8 @@ Per installare l’SDK per AEM, il computer locale deve soddisfare i seguenti re
 
 Per creare un nuovo ambiente di sviluppo locale e utilizzarlo per sviluppare e testare moduli adattivi headless:
 
-1. [Configurare l’SDK per AEM as a Cloud Service](#setup-author-instance).
-1. [Aggiungere l’archivio AEM Forms (componente aggiuntivo Cloud Service AEM Forms) all’SDK dell’AEM](#add-forms-archive).
+1. [Configura AEM as a Cloud Service SDK](#setup-author-instance).
+1. [Aggiungi archivio AEM Forms (componente aggiuntivo Cloud Service AEM Forms) all&#39;SDK AEM](#add-forms-archive).
 
 <!--
 
@@ -59,11 +59,11 @@ Per creare un nuovo ambiente di sviluppo locale e utilizzarlo per sviluppare e t
 
 -->
 
-### 1. Configurare l’SDK as a Cloud Service per l’AEM {#setup-author-instance}
+### 1. Configurare l’SDK di AEM as a Cloud Service {#setup-author-instance}
 
-L’SDK per AEM as a Cloud Service (AEM SDK) offre agli sviluppatori un’esperienza locale per creare e testare moduli adattivi headless. Puoi utilizzare l’SDK per AEM as a Cloud Service sia per creare che per visualizzare in anteprima i moduli adattivi headless, in modo da eseguire localmente la maggior parte delle convalide relative allo sviluppo. Per impostare un&#39;istanza di authoring locale:
+L’SDK per AEM as a Cloud Service (AEM SDK) offre agli sviluppatori un’esperienza locale per creare e testare moduli adattivi headless. Puoi utilizzare l’SDK di AEM as a Cloud Service sia per creare che per visualizzare in anteprima i moduli adattivi headless, in modo da eseguire localmente la maggior parte delle convalide relative allo sviluppo. Per impostare un&#39;istanza di authoring locale:
 
-1. [Scarica](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) più recente [!DNL Adobe Experience Manager] SDK as a Cloud Service. Utilizza la colonna Data di pubblicazione per ordinare e individuare facilmente l’SDK più recente.
+1. [Scarica](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) l&#39;as a Cloud Service [!DNL Adobe Experience Manager] SDK. Utilizza la colonna Data di pubblicazione per ordinare e individuare facilmente l’SDK più recente.
 È in formato .zip. La versione supportata è aem-sdk-2022.7.8085.20220725T140323Z-220700.zip e successive.
 
    ![Scarica AEM Cloud Service SDK dal portale di distribuzione software](assets/software-distribution.png)
@@ -71,14 +71,14 @@ L’SDK per AEM as a Cloud Service (AEM SDK) offre agli sviluppatori un’esperi
 
 1. Estrai il file .zip scaricato in una directory sul computer locale.
 1. Crea una directory sul computer locale da usare come percorso di installazione per l’istanza di authoring. Esempio: `~/aem-sdk/author`.
-1. Copia il file .jar dai file SDK estratti nel percorso di installazione e rinomina il file in `aem-author-p4502.jar`. Il `p4502` stringa nel nome file specifica il numero di porta da utilizzare. È inoltre possibile specificare un numero di porta diverso.
+1. Copiare il file .jar dai file SDK estratti nel percorso di installazione e rinominare il file in `aem-author-p4502.jar`. La stringa `p4502` nel nome file specifica il numero di porta da utilizzare. È inoltre possibile specificare un numero di porta diverso.
 
    >[!NOTE]
    >
-   > Non fare doppio clic sul file .jar per avviarlo. Si ottiene un [errore](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#troubleshooting-double-click).
+   > Non fare doppio clic sul file .jar per avviarlo. Si verifica un [errore](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#troubleshooting-double-click).
 
 1. Apri il prompt dei comandi:
-   * In Windows, utilizza **Esegui come amministratore** per aprire il prompt dei comandi in modalità avanzata.
+   * In Windows, utilizzare l&#39;opzione **Esegui come amministratore** per aprire il prompt dei comandi in modalità avanzata.
    * Su Linux, accertati di aprire la finestra del terminale come utente root.
 
 1. Passa alla posizione di installazione contenente il file .jar copiato ed esegui il comando seguente:
@@ -87,26 +87,26 @@ L’SDK per AEM as a Cloud Service (AEM SDK) offre agli sviluppatori un’esperi
 
    ![Scarica AEM Cloud Service SDK dal portale di distribuzione software](assets/install-sdk.png)
 
-   * Il `-r prerelease` switch abilita le funzioni disponibili solo nei programmi prerelease e limited release.
+   * Lo switch `-r prerelease` abilita le funzionalità disponibili solo nei programmi prerelease e release limitate.
    * È possibile utilizzare `admin` come nome utente e password per lo sviluppo locale per ridurre il carico cognitivo.
 
-   Dopo l’avvio dell’AEM, la pagina di accesso si apre nel browser web. Puoi anche aprire la pagina di accesso per l’istanza dell’SDK AEM all’indirizzo `http://localhost:<port>` nel browser. Ad esempio: [http://localhost:4502](Http://localhost:4502).
+   Dopo l’avvio dell’AEM, la pagina di accesso si apre nel browser web. È inoltre possibile aprire la pagina di accesso per l&#39;istanza dell&#39;SDK AEM all&#39;indirizzo `http://localhost:<port>` nel browser Web. Ad esempio, [http://localhost:4502](Http://localhost:4502).
 
-1. Accedi all’istanza di authoring. Tocca il ![aiuto](/help/assets/Help-icon.svg) , toccare Informazioni su Adobe Experience Manager e assicurarsi che il numero di versione includa il suffisso PRERELEASE.
+1. Accedi all’istanza di authoring. Tocca l&#39;icona ![help](/help/assets/Help-icon.svg), quindi Tocca Informazioni su Adobe Experience Manager e accertati che il numero di versione includa il suffisso PRERELEASE.
 
    Aiuto di ![](/help/assets/prerelease.png)
 
-Se non viene visualizzato il suffisso PRERELEASE, arrestare il server, eliminare `[AEM SDK installation]/crx-quickstart folder`, e riavviare il file .jar dell’SDK dell’AEM con `-r prerelease` switch. Per ulteriori opzioni, consulta [Risoluzione dei problemi](/help/troubleshooting.md).
+Se non viene visualizzato il suffisso PRERELEASE, arrestare il server, eliminare `[AEM SDK installation]/crx-quickstart folder` e riavviare il file .jar dell&#39;SDK per AEM con l&#39;opzione `-r prerelease`. Per ulteriori opzioni, vedere [Risoluzione dei problemi](/help/troubleshooting.md).
 
 ### 2. Aggiungere l’archivio di AEM Forms (componente aggiuntivo per il Cloud Service AEM Forms) all’SDK dell’AEM {#add-forms-archive}
 
-L’archivio delle funzioni as a Cloud Service di AEM Forms (componente aggiuntivo AEM Forms Cloud Service) fornisce gli strumenti necessari per creare moduli adattivi headless in un ambiente di sviluppo locale. Per installare l&#39;archivio delle funzionalità:
+L’archivio delle funzioni di AEM Forms as a Cloud Service (componente aggiuntivo AEM Forms Cloud Service) fornisce gli strumenti necessari per creare moduli adattivi headless in un ambiente di sviluppo locale. Per installare l&#39;archivio delle funzionalità:
 
-1. Scarica ed estrai la versione più recente [!DNL AEM Forms] archivio delle funzioni (componente aggiuntivo AEM Forms) da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20). Utilizza la colonna Data di pubblicazione per ordinare e individuare facilmente l’SDK più recente. La versione supportata è aem-forms-addon-2022.07.06.02-220600 e versioni successive.
+1. Scarica ed estrai l&#39;archivio delle funzionalità [!DNL AEM Forms] più recente (componente aggiuntivo AEM Forms) da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20). Utilizza la colonna Data di pubblicazione per ordinare e individuare facilmente l’SDK più recente. La versione supportata è aem-forms-addon-2022.07.06.02-220600 e versioni successive.
 
 1. Passa alla directory crx-quickstart/install. Se la cartella non esiste, creala.
 1. Arresta l’istanza dell’SDK per AEM. Per arrestare l’AEM, puoi chiudere la finestra del prompt dei comandi che esegue l’istanza dell’SDK per AEM.
-1. Copia il [!DNL AEM Forms] archivio di funzioni del componente aggiuntivo da file, `aem-forms-addon-<version>.far`, estratto nel passaggio 1 nella cartella di installazione.
+1. Copiare l&#39;archivio delle funzionalità del componente aggiuntivo [!DNL AEM Forms] dal file `aem-forms-addon-<version>.far` estratto nel passaggio 1 nella cartella di installazione.
 1. Utilizza il seguente comando per riavviare l’istanza dell’SDK per AEM:
 
    `java -jar aem-author-p4502.jar -r prerelease`

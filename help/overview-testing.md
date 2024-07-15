@@ -21,14 +21,14 @@ ht-degree: 13%
 
 Adobe Experience Manager (AEM) Headless Adaptive Forms è una soluzione per la creazione e la gestione di moduli web headless all’interno della piattaforma Adobe Experience Manager. Questa funzione consente alle organizzazioni di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e con cui interagire tramite API, anziché tramite un’interfaccia utente grafica tradizionale. Il Forms adattivo headless dell’AEM offre maggiore flessibilità e scalabilità nello sviluppo e nella distribuzione dei moduli, nonché una migliore esperienza utente grazie alla possibilità di adattare la progettazione e la funzionalità dei moduli alle esigenze specifiche. Utilizzando le funzionalità dell’AEM e la tecnologia headless, questa soluzione fornisce una piattaforma solida per la creazione, la gestione e l’implementazione di moduli web per vari casi d’uso e applicazioni.
 
-![Creare ed eseguire il rendering nativo di un modulo in qualsiasi sito Web, applicazione o interazione non visiva](/help/assets/headless-forms-for-any-device.jpeg)
+![Genera ed esegui il rendering nativo di un modulo in qualsiasi sito Web, applicazione o interazione non visiva](/help/assets/headless-forms-for-any-device.jpeg)
 
 I moduli adattivi headless consentono di:
 
 * creare moduli multi-canale di alta qualità nel linguaggio di programmazione desiderato
 * integrare in modo nativo i moduli nelle app desktop e per dispositivi mobili, nei siti web e nelle applicazioni chat
 * riutilizzare i componenti proprietari dell’interfaccia utente con le applicazioni di Forms
-* sfruttare [potenza di Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html)
+* sfrutta la potenza di [Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html)
 
 Inoltre, puoi sviluppare i tuoi componenti per eseguire il rendering di un modulo utilizzando qualsiasi framework di interfaccia utente e linguaggio di programmazione a tua scelta. Puoi anche utilizzare i componenti React disponibili come predefiniti per il rendering di un modulo adattivo headless.
 
@@ -179,11 +179,11 @@ Inoltre, puoi sviluppare i tuoi componenti per eseguire il rendering di un modul
     <!-- Add more cards as needed -->
 </div>
 
-—>
+-->
 
 ## Chi può utilizzare moduli adattivi headless? {#who-can-use-headless-adaptive-forms}
 
-Qualsiasi sviluppatore front-end che ha familiarità con i framework JavaScript moderni può utilizzare moduli adattivi headless. Gli sviluppatori possono sfruttare la loro esperienza esistente in linguaggi front-end come React per creare esperienze di acquisizione dati di classe enterprise.
+Qualsiasi sviluppatore front-end che ha familiarità con i moderni framework JavaScript può utilizzare moduli adattivi headless. Gli sviluppatori possono sfruttare la loro esperienza esistente in linguaggi front-end come React per creare esperienze di acquisizione dati di classe enterprise.
 
 Per sviluppare moduli adattivi headless non è necessaria alcuna conoscenza preventiva di Adobe Experience Manager.
 

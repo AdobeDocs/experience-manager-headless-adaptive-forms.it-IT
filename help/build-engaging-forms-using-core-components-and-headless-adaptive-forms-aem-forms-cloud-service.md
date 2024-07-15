@@ -12,7 +12,7 @@ ht-degree: 85%
 
 ---
 
-# Creare Forms coinvolgenti utilizzando componenti core e Forms adattivo headless su AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
+# Creare Forms coinvolgenti utilizzando componenti core e Forms adattivo headless in AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
 
 ## Panoramica del workshop {#lab-overview}
 
@@ -32,13 +32,13 @@ come utilizzare AEM Forms per creare facilmente moduli adattivi utilizzando i co
 
 Per usare queste mani sul laboratorio:
 
-* Installare [ultima versione di Git](https://git-scm.com/downloads). Se hai poca esperienza con Git, consulta [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Installa la [versione più recente di Git](https://git-scm.com/downloads). Se sei un nuovo utente di Git, vedi [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 * Installa [Node.js 16.13.0 o versione successiva](https://nodejs.org/it/download/). Se hai poca esperienza con Node.js, consulta [Come installare Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
-* [Abilita componenti core Forms adattivi](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) per l’ambiente as a Cloud Service AEM Forms.
+* [Abilita i componenti core adattivi di Forms](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) per l&#39;ambiente AEM Forms as a Cloud Service.
 
-* Installa [Codice Microsoft Visual Studio](https://code.visualstudio.com/download) o qualsiasi editor di testo normale. Esempi in un documento utilizzano Microsoft Visual Studio Code.
+* Installa [Microsoft Visual Studio Code](https://code.visualstudio.com/download) o qualsiasi editor di testo normale. Esempi in un documento utilizzano Microsoft Visual Studio Code.
 
 
 
@@ -60,7 +60,7 @@ In questa lezione imparerai a conoscere l’ambiente di AEM Forms as a Cloud Ser
 1. Accedi all’ambiente di authoring del Cloud Service.
    ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
-1. Per accedere all’interfaccia utente di AEM Forms, fai clic su **Forms > Forms e documenti**.
+1. Per passare all&#39;interfaccia utente di AEM Forms, fare clic su **Forms > Forms &amp; Documents**.
 
 
 
@@ -103,12 +103,12 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
    1. Fai clic sulla scheda **Stile** e seleziona il tema **wknd-theme** come mostrato di seguito:
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
-   1. Fai clic su **Invio** e seleziona la scheda **Invia a endpoint REST** e specificare il raccoglitore pubblico nel **URL per la richiesta POST** come mostrato di seguito:
+   1. Fai clic sulla scheda **Invio**, seleziona la scheda **Invia all&#39;endpoint REST** e specifica il contenitore pubblico nel campo **URL per la richiesta POST**, come illustrato di seguito:
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
-   1. Fai clic su **Crea**. Specifica un nome e un titolo per il modulo. Ad esempio: **registrazione**. Fai clic su **Crea**.
+   1. Fai clic su **Crea**. Specifica un nome e un titolo per il modulo. Ad esempio, **registrazione**. Fai clic su **Crea**.
 
-   1. Viene aperto l’editor di moduli adattivi. Chiudi eventuali pop-up o finestre di dialogo relativi a preferenze o informazioni. Fai clic sul browser Componenti nella barra a sinistra e aggiungi **Intestazione** e **Piè di pagina** nella parte superiore e inferiore del modulo vuoto.
+   1. Viene aperto l’editor di moduli adattivi. Chiudi eventuali pop-up o finestre di dialogo relativi a preferenze o informazioni. Fai clic sul browser Componenti nella barra a sinistra e aggiungi i componenti **Intestazione** e **Piè di pagina** rispettivamente all&#39;inizio e alla fine del modulo vuoto.
       ![](/help/assets/screenshot2028121929.png)
 
    1. Trascina i componenti dal browser Componenti per creare un modulo simile al seguente:
@@ -138,13 +138,13 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
 
 1. Aggiungi interattività al modulo con le regole:
 
-   1. Fai clic su **Seleziona la casella per ricevere uno sconto del 5%** componente. Sulla barra degli strumenti delle opzioni fare clic sull&#39;icona Regole. Viene visualizzata l’opzione Editor regole.
+   1. Fai clic sulla **Seleziona la casella per ricevere il 5% di sconto** del componente. Sulla barra degli strumenti delle opzioni fare clic sull&#39;icona Regole. Viene visualizzata l’opzione Editor regole.
 
-   1. Creare una regola, quando **Seleziona la casella per ricevere uno sconto del 5%** opzione è selezionata, le opzioni per l&#39;applicazione della carta di credito sono disabilitate.
+   1. Crea una regola: quando l&#39;opzione **Seleziona la casella per ricevere il 5% di sconto** è selezionata, le opzioni per l&#39;applicazione della carta di credito sono disabilitate.
 
-1. Pubblica il modulo.
+1. Publish il modulo.
 
-   1. Apri l’interfaccia di gestione di AEM Forms, ad esempio, `https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments`e selezionare il modulo.
+   1. Aprire l&#39;interfaccia di gestione di AEM Forms, ad esempio `https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments`, e selezionare il modulo.
 
    1. Fai clic su **Pubblica**.
 
@@ -237,7 +237,7 @@ Configurazione dell’archivio locale del tema:
 
    >[!NOTE]
    >
-   > * Se ricevi un messaggio che richiede di aggiornare npm tramite `npm notice Run npm nstall -g npm@9.6.0` ignorare il messaggio.
+   > * Se viene visualizzato un messaggio in cui viene richiesto di aggiornare npm tramite il comando `npm notice Run npm nstall -g npm@9.6.0`, ignorare il messaggio.
    > * Non eseguire altri comandi npm a meno che non sia indicato nella cartella di lavoro.
 
 1. Ora, per visualizzare l’anteprima del modulo, esegui il comando seguente.
@@ -248,9 +248,9 @@ Configurazione dell’archivio locale del tema:
 
    ![](/help/assets/screenshot2028117229.png)
 
-   Una volta eseguito il comando precedente, attendere che `webpack compiled` viene reindirizzato a una pagina di accesso AEM.
+   Una volta eseguito il comando precedente, attendere il messaggio `webpack compiled` e si viene reindirizzati a una pagina di accesso AEM.
 
-1. Clic **Accesso locale (solo attività amministratore)** nella pagina di accesso dell’AEM.
+1. Fare clic su **Accedi localmente (solo attività amministratore)** nella pagina di accesso AEM.
 1. Immettere le credenziali per l&#39;utente locale creato e il modulo verrà visualizzato in una scheda del browser.
 
    >[!NOTE]
@@ -383,7 +383,7 @@ Apporta le modifiche al modulo sul server come utente aziendale e visualizza le 
 
 1. Apri l’interfaccia di gestione di AEM Forms nel browser. Ad esempio: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
 
-1. Seleziona la **contatto** modulo e clic **Modifica.** Il modulo viene aperto nell’editor di moduli adattivi.
+1. Selezionare il modulo **contactus** e fare clic su **Modifica.** Il modulo viene aperto nell’editor di moduli adattivi.
 
 
 1. Seleziona il campo **Numero di telefono** e fai clic sull’**icona Modifica (a forma di matita)** nella barra degli strumenti. Se la barra degli strumenti a comparsa non è visibile, passa alla modalità Modifica facendo clic sul pulsante **Modifica** in alto a destra, a sinistra del pulsante **Anteprima**.

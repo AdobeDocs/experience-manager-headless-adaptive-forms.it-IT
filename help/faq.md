@@ -11,7 +11,7 @@ hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
 source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '423'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,9 @@ You can use Archetype 37 with flag `includeFormsheadless` or later flag to creat
 
 -->
 
-## È necessario Forms as a Cloud Service sandbox per utilizzare moduli adattivi headless?
+## È necessario Forms as a Cloud Service Sandbox per utilizzare moduli adattivi headless?
 
-Puoi utilizzare l’app iniziale per iniziare a sviluppare e formattare i moduli adattivi headless. Per ospitare e distribuire moduli adattivi headless e le relative funzionalità sono necessari Forms as a Cloud Service.
+Puoi utilizzare l’app iniziale per iniziare a sviluppare e formattare i moduli adattivi headless. È necessario che Forms as a Cloud Service ospiti e distribuisca moduli adattivi headless insieme alle funzionalità dei moduli back-end.
 
 <!-- ## Do I need an archetype project to develop Headless adaptive forms?
 
@@ -40,21 +40,21 @@ archetype project to deploy the finished Headless adaptive forms and correspondi
 
 ## Dove posso trovare un’anteprima di un modulo adattivo headless? {#storybook-example}
 
-Puoi utilizzare l’app iniziale per eseguire il rendering e l’anteprima di un modulo adattivo headless personalizzato. È inoltre possibile modificare una [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) esempio per visualizzare in anteprima un modulo adattivo headless.
+Puoi utilizzare l’app iniziale per eseguire il rendering e l’anteprima di un modulo adattivo headless personalizzato. Puoi anche modificare un esempio di [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) per visualizzare in anteprima un modulo adattivo headless.
 
 ![](/help/assets/storybook-example.png)
 
 ## È possibile utilizzare moduli adattivi headless con framework personalizzati?
 
-I moduli adattivi headless si basano su [specifica standard](/help/assets/Headless-Adaptive-Form-Specification.pdf). Puoi estendere la specifica per utilizzarla per creare componenti personalizzati. Ad esempio, componenti per l’interfaccia utente di Chakra, Vue.js e altro ancora.
+I moduli adattivi headless si basano sulla [specifica standard](/help/assets/Headless-Adaptive-Form-Specification.pdf). Puoi estendere la specifica per utilizzarla per creare componenti personalizzati. Ad esempio, componenti per l’interfaccia utente di Chakra, Vue.js e altro ancora.
 
 ## I moduli adattivi headless supportano i campi a cascata?
 
-Nei campi a catena, il contenuto del secondo campo dipende dal contenuto scelto nel primo campo. Il [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&amp;args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) In viene fornito un esempio di campi CSS.
+Nei campi a catena, il contenuto del secondo campo dipende dal contenuto scelto nel primo campo. Il [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&amp;args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) fornisce un esempio di campi a catena.
 
 ## I moduli adattivi headless consentono la precompilazione dei moduli con dati personalizzati?
 
-I moduli adattivi headless consentono la precompilazione dei moduli con dati personalizzati. Il [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) In viene fornito un esempio di come precompilare un modulo adattivo headless.
+I moduli adattivi headless consentono la precompilazione dei moduli con dati personalizzati. Il [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) fornisce un esempio di come precompilare un modulo adattivo headless.
 
 <!-- >
 ## Can I use existing Adaptive Forms editor to create a Headless adaptive form?

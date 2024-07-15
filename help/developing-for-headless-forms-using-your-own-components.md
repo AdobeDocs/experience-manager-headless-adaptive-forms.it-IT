@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Sviluppo per moduli headless tramite componenti personalizzati {#developing-for-headless-forms-using-your-own-components}
 
-<span class="preview"> Questo è un **LAVORO IN CORSO** articolo.</span>
+<span class="preview"> Questo è un articolo di **WORK IN PROGRESS**.</span>

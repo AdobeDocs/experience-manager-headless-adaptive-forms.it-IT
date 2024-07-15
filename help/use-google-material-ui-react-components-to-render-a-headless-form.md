@@ -10,7 +10,7 @@ hide: false
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
 source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Questi componenti hanno due finalità principali: controllare l’aspetto o lo s
 
 In questo tutorial, vengono utilizzati i componenti dell’interfaccia utente di Google Material per dimostrare come eseguire il rendering di un modulo adattivo headless utilizzando i componenti React personalizzati. Tuttavia, non sei limitato a questa libreria e sei libero di utilizzare qualsiasi libreria di componenti React o di sviluppare componenti personalizzati.
 
-Con la conclusione di questo articolo, il _Contattaci_ modulo creato in [Creare e pubblicare un modulo headless con kit di avvio](create-and-publish-a-headless-form.md) L&#39;articolo si trasforma in:
+Alla conclusione di questo articolo, il modulo _Contattaci_ creato in [Crea e pubblica un modulo headless utilizzando il kit di avvio](create-and-publish-a-headless-form.md) si trasforma nel seguente:
 
 ![](assets/headless-adaptive-form-with-google-material-ui-components.png)
 
@@ -35,9 +35,9 @@ I passaggi principali necessari per l’utilizzo dei componenti dell’interfacc
 
 ## 1. Installare l’interfaccia utente dei materiali di Google
 
-Per impostazione predefinita, il kit di avvio utilizza [Spettro Adobe](https://spectrum.adobe.com/) componenti. Impostiamolo per l’utilizzo [Interfaccia utente Materiale di Google](https://mui.com/):
+Per impostazione predefinita, il kit di avvio utilizza i componenti Spectrum](https://spectrum.adobe.com/) di [Adobe. Impostiamolo per utilizzare [l&#39;interfaccia utente dei materiali di Google](https://mui.com/):
 
-1. Verificare che il kit di avvio non sia in esecuzione. Per arrestare il kit di avvio, aprire il terminale, passare alla **react-starter-kit-aem-headless-forms**, e premere Ctrl-C (lo stesso avviene su Windows, Mac e Linux).
+1. Verificare che il kit di avvio non sia in esecuzione. Per arrestare il kit di avvio, apri il terminale, passa a **react-starter-kit-aem-headless-forms** e premi Ctrl-C (lo stesso avviene su Windows, Mac e Linux).
 
    Non tentare di chiudere il terminale. La chiusura del terminale non arresta il kit di avvio.
 
@@ -54,24 +54,24 @@ Installa le librerie npm dell’interfaccia utente di Google Material e aggiunge
 
 ## 2. Creare componenti React personalizzati
 
-Creiamo un componente personalizzato che sostituisca quello predefinito [immissione testo](https://spectrum.adobe.com/page/text-field/) componente con [Campo di testo interfaccia utente materiale Google](https://mui.com/material-ui/react-text-field/) componente.
+Creiamo un componente personalizzato che sostituisce il componente predefinito [immissione testo](https://spectrum.adobe.com/page/text-field/) con il componente [Campo di testo interfaccia utente materiale Google](https://mui.com/material-ui/react-text-field/).
 
-Per ogni tipo di componente è necessario un componente separato ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) o :type) utilizzato in una definizione di modulo headless. Ad esempio, nel modulo Contattaci creato nella sezione precedente, i campi Nome, E-mail e Telefono di tipo `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) e il campo del messaggio è di tipo `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
-
-
-Creiamo un componente personalizzato per sovrapporre tutti i campi modulo che utilizzano [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) proprietà con [Campo di testo interfaccia utente materiale](https://mui.com/material-ui/react-text-field/) componente.
+È necessario un componente separato per ogni tipo di componente ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) o :type) utilizzato in una definizione di modulo headless. Ad esempio, nel modulo Contattaci creato nella sezione precedente, i campi Nome, E-mail e Telefono di tipo `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) e il campo del messaggio è di tipo `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
 
 
-Per creare il componente personalizzato e mappare il componente personalizzato con [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) proprietà:
-
-1. Apri **react-starter-kit-aem-headless-forms** in un editor di codice e passare a `\react-starter-kit-aem-headless-forms\src\components`.
+Creiamo un componente personalizzato per sovrapporre tutti i campi modulo che utilizzano la proprietà [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) con il componente [Material UI Text Field](https://mui.com/material-ui/react-text-field/).
 
 
-1. Crea una copia di **cursore** o **richtext** e rinominare la cartella copiata in **materialtextfield**. Slider e richtext sono due esempi di componenti personalizzati disponibili nell’app iniziale. Puoi utilizzarli per creare componenti personalizzati.
+Per creare il componente personalizzato e mappare il componente personalizzato con la proprietà [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def):
+
+1. Apri la directory **react-starter-kit-aem-headless-forms** in un editor di codice e passa a `\react-starter-kit-aem-headless-forms\src\components`.
+
+
+1. Crea una copia della cartella **slider** o **richtext** e rinomina la cartella copiata in **materialtextfield**. Slider e richtext sono due esempi di componenti personalizzati disponibili nell’app iniziale. Puoi utilizzarli per creare componenti personalizzati.
 
    ![Componente personalizzato materialtextfield in VSCode](/help/assets/richtext-custom-component-in-vscode.png)
 
-1. Apri `\react-starter-kit-aem-headless-forms\src\components\materialtextfield\index.tsx` e sostituire il codice esistente con il codice seguente. Questo codice restituisce ed esegue il rendering di un [Campo di testo interfaccia utente materiale Google](https://mui.com/material-ui/react-text-field/) componente.
+1. Apri il file `\react-starter-kit-aem-headless-forms\src\components\materialtextfield\index.tsx` e sostituisci il codice esistente con il codice seguente. Questo codice restituisce ed esegue il rendering di un componente [Google Material UI Text Field](https://mui.com/material-ui/react-text-field/).
 
 ```JavaScript
  
@@ -102,31 +102,31 @@ Per creare il componente personalizzato e mappare il componente personalizzato c
 ```
 
 
-Il `state.visible` la parte controlla se il componente è impostato per essere visibile. In caso affermativo, l’etichetta del campo viene recuperata e visualizzata utilizzando `richTextString(state?.label?.value)`.
+La parte `state.visible` controlla se il componente è impostato per essere visibile. In caso affermativo, l&#39;etichetta del campo viene recuperata e visualizzata utilizzando `richTextString(state?.label?.value)`.
 
 ![](/help/assets/material-text-field.png)
 
 
-Il componente personalizzato `materialtextfield` è pronto. Impostiamo questo componente personalizzato per sostituire tutte le istanze di  [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) con il campo di testo dell’interfaccia utente Materiale di Google.
+Il componente personalizzato `materialtextfield` è pronto. Impostiamo questo componente personalizzato in modo da sostituire tutte le istanze di [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) con il campo di testo dell&#39;interfaccia utente di Google Material.
 
 ## 3. Mappatura del componente personalizzato con campi modulo headless
 
-Il processo di utilizzo di componenti libreria di terze parti per il rendering dei campi modulo è noto come mappatura. Mappatura di ciascuna ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)) al componente corrispondente della libreria di terze parti.
+Il processo di utilizzo di componenti libreria di terze parti per il rendering dei campi modulo è noto come mappatura. Mappa ogni ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)) al componente corrispondente della libreria di terze parti.
 
-Tutte le informazioni relative alla mappatura vengono aggiunte al `mappings.ts` file. Il `...mappings` dichiarazione nella `mappings.ts` file fa riferimento alle mappature predefinite, che sovrappongono il file ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) o :type) con [Spettro Adobe](https://spectrum.adobe.com/page/text-field/) componenti.
+Tutte le informazioni relative alla mappatura vengono aggiunte al file `mappings.ts`. L&#39;istruzione `...mappings` nel file `mappings.ts` fa riferimento alle mappature predefinite, che sovrappongono ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) o :type) con i componenti [Adobe Spectrum](https://spectrum.adobe.com/page/text-field/).
 
-Per aggiungere la mappatura per  `materialtextfield` componente, creato nell&#39;ultimo passaggio:
+Per aggiungere la mappatura per il componente `materialtextfield`, creato nell&#39;ultimo passaggio:
 
-1. Apri `mappings.ts` file.
+1. Aprire il file `mappings.ts`.
 
-1. Aggiungi la seguente istruzione di importazione per includere `materialtextfield` componente per `mappings.ts` file:
+1. Aggiungere la seguente istruzione di importazione per includere il componente `materialtextfield` nel file `mappings.ts`:
 
 
    ```JavaScript
        import MaterialtextField from "../components/materialtextfield";
    ```
 
-1. Aggiungi la seguente istruzione per mappare `text-input` con il componente materialtextfield.
+1. Aggiungere l&#39;istruzione seguente per associare `text-input` al componente materialtextfield.
 
 
    ```JavaScript
@@ -147,7 +147,7 @@ Per aggiungere la mappatura per  `materialtextfield` componente, creato nell&#39
         export default customMappings;
    ```
 
-1. Salva ed esegui l’app. I primi tre campi del modulo vengono visualizzati utilizzando [Campo di testo interfaccia utente materiale Google](https://mui.com/material-ui/react-text-field/):
+1. Salva ed esegui l’app. Viene eseguito il rendering dei primi tre campi del modulo utilizzando [Campo di testo interfaccia utente materiale Google](https://mui.com/material-ui/react-text-field/):
 
    ![](assets/material-text-field-form-rendetion.png)
 

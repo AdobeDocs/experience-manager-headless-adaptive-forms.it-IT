@@ -23,7 +23,7 @@ Questa esercitazione fornisce un framework end-to-end per creare un modulo adatt
 
 Potrai anche acquisire familiarità con l’architettura, gli artefatti disponibili e la struttura JSON dei moduli adattivi headless.
 
-**Il percorso inizia con l’apprendimento del caso d’uso**:
+**Il percorso inizia con l&#39;apprendimento del caso d&#39;uso**:
 
 Raya Tan, membro del Dipartimento degli Esteri di un paese noto per le sue bellezze naturali e per la sua fiorente economia del turismo, supervisiona la distribuzione dei visti ai turisti. Questi moduli sono disponibili sul sito web del dipartimento, sulle app native per dispositivi mobili e in formato PDF, con diverse opzioni linguistiche tra cui i turisti possono scegliere. Tuttavia, la gestione e la scalabilità di questi moduli su piattaforme e tecnologie diverse può essere problematica.
 
@@ -31,4 +31,4 @@ Al fine di migliorare l&#39;efficienza e la flessibilità della procedura di dom
 
 La forma più popolare tra i turisti è il modulo &quot;Contattaci&quot;, che viene utilizzato per porre varie domande e richieste. Di conseguenza, il dipartimento degli affari esteri ha scelto di iniziare a implementare l’approccio ai moduli adattivi headless con questo modulo. Questo tutorial ti guiderà attraverso il processo di creazione del modulo Contattaci utilizzando questa nuova architettura. Il risultato finale sarà simile al seguente:
 
-![Modulo adattivo headless Stati Uniti](assets/contact-us-headless-adaptive-forms.png)
+![Contatta il modulo adattivo headless per gli Stati Uniti](assets/contact-us-headless-adaptive-forms.png)

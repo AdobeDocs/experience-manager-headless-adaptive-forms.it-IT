@@ -5,11 +5,11 @@ description: Scopri come abilitare i moduli adattivi headless su Forms AEM 6.5 c
 seo-description: Learn how to enable headless adaptive forms on AEM 6.5 Forms with our step-by-step guide. Our tutorial walks you through the process, making it easy to integrate this powerful feature into your website and improve your user experience.
 contentOwner: Khushwant Singh
 role: Admin
-exl-id: c5a7dee1-b177-4461-b9bd-af40ef59ad80
-source-git-commit: f489a2ba818db44ccd92df80a177f0e9f3a1bc2c
+exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 4%
+source-wordcount: '743'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 4%
 
 Per abilitare Headless Adaptive Forms nell’ambiente Forms AEM 6.5, configura un progetto basato su AEM Archetype 41 o versione successiva e implementalo in tutte le istanze di Author e Publish.
 
-Distribuendo il progetto basato su Archetipo AEM 41 o versione successiva nelle istanze di Forms AEM 6.5, è possibile: [creazione di componenti core basati su Adaptive Forms](create-a-headless-adaptive-form.md). Questi moduli sono rappresentati in formato JSON e utilizzati come Forms headful e headless adattivo, consentendo una maggiore flessibilità e personalizzazione in una serie di canali, tra cui app mobile, web e native.
+Distribuendo il progetto basato su Archetipo AEM 41 o versione successiva nelle istanze di Forms AEM 6.5, è possibile [creare componenti core basati su Adaptive Forms](create-a-headless-adaptive-form.md). Questi moduli sono rappresentati in formato JSON e utilizzati come Forms headful e headless adattivo, consentendo una maggiore flessibilità e personalizzazione in una serie di canali, tra cui app mobile, web e native.
 
 ## Prerequisiti {#prerequisites}
 
 Prima di abilitare Headless Adaptive Forms nell’ambiente Forms AEM 6.5,
 
-* [Aggiornamento a AEM 6.5 Forms Service Pack 16 (6.5.16.0) o versione successiva](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [Eseguire l&#39;aggiornamento a AEM 6.5 Forms Service Pack 16 (6.5.16.0) o versione successiva](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
 
 * Installa la versione più recente di [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -31,7 +31,7 @@ Prima di abilitare Headless Adaptive Forms nell’ambiente Forms AEM 6.5,
 
 ## Crea e implementa il progetto più recente basato su Archetipo AEM
 
-Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-project-archetype) basato su e distribuirlo a tutte le istanze Author e Publish:
+Per creare un progetto basato su Archetipo AEM 41 o [versione successiva](https://github.com/adobe/aem-project-archetype) e distribuirlo a tutte le istanze Author e Publish:
 
 1. Accedi al computer, hosting ed esecuzione dell’istanza Forms AEM 6.5, come amministratore.
 1. Apri il prompt dei comandi o il terminale.
@@ -67,13 +67,13 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
 
    Quando esegui il comando di cui sopra, considera i seguenti punti:
 
-   * Aggiorna il comando in modo che rifletta i valori specifici per l&#39;ambiente, inclusi appTitle, appId e groupId. Impostare inoltre i valori di includeFormsenrollment su &#39;y&#39;. Se si utilizza Forms Portal, impostare _includeExamples=y_ per includere nel progetto i componenti core di Forms Portal.
+   * Aggiorna il comando in modo che rifletta i valori specifici per l&#39;ambiente, inclusi appTitle, appId e groupId. Impostare inoltre i valori di includeFormsenrollment su &#39;y&#39;. Se si utilizza Forms Portal, impostare l&#39;opzione _includeExamples=y_ per includere nel progetto i componenti core di Forms Portal.
 
    * Non modificare &quot;aemVersion&quot; da 6.5.15.0 ad altro.
 
 1. (Solo per progetti basati su Archetipo versione 41) Dopo la creazione del progetto Archetipo AEM, abilita i temi per Forms adattivo basato su Componenti core. Per abilitare i temi:
 
-   1. Apri [Cartella progetto Archetipo AEM]/ui.apps/src/main/content/jcr_root/apps/__appId__/components/adaptiveForm/page/customheaderlibs.html per la modifica:
+   1. Apri la [cartella dei progetti Archetipo AEM]/ui.apps/src/main/content/jcr_root/apps/__appId__/components/adaptiveForm/page/customheaderlibs.html per modificare:
 
    1. Aggiungere il seguente codice alla riga 21:
 
@@ -85,18 +85,18 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
       </sly>
       ```
 
-      ![Aggiungere il codice sopra indicato alla riga 21](/help/assets/code-to-enable-themes.png)
+      ![Aggiungi il codice sopra menzionato alla riga 21](/help/assets/code-to-enable-themes.png)
 
-   1. Salva e chiudi il file 
+   1. Salva e chiudi il file.
 
 1. Aggiorna il progetto per includere la versione più recente dei Componenti core di Forms:
 
-   1. Apri [Cartella progetto Archetipo AEM]/pom.xml per la modifica.
-   1. Imposta versione di `core.forms.components.version` e `core.forms.components.af.version` a [Componenti core Forms più recenti](https://github.com/adobe/aem-core-forms-components/tree/release/650) versione.
+   1. Apri [Cartella progetti Archetipo AEM]/pom.xml per la modifica.
+   1. Imposta la versione di `core.forms.components.version` e `core.forms.components.af.version` sulla [versione più recente dei componenti core di Forms](https://github.com/adobe/aem-core-forms-components/tree/release/650).
 
       ![Menzionare la versione più recente dei componenti core di Forms](/help/assets/latest-forms-component-version.png)
 
-   1. Salva e chiudi il file 
+   1. Salva e chiudi il file.
 
 
 1. Dopo aver creato correttamente il progetto dell’Archetipo AEM, crea il pacchetto di distribuzione per il tuo ambiente. Per generare il pacchetto:
@@ -113,24 +113,24 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
       ![archetypebuild-success](assets/corecomponent-build-successful.png)
 
 
-   Una volta creato correttamente il progetto dell’Archetipo AEM, viene generato un pacchetto AEM. Puoi trovare il pacchetto all’indirizzo [Cartella progetto Archetipo AEM]\all\target\[appid].all-[version].zip
+   Una volta creato correttamente il progetto dell’Archetipo AEM, viene generato un pacchetto AEM. Puoi trovare il pacchetto in [Cartella progetti Archetipo AEM]\all\target\[appid].all-[version].zip
 
-1. Utilizza il [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) per implementare [Cartella progetto Archetipo AEM]\all\target\[appid].all-[version].zip su tutte le istanze Author e Publish.
+1. Utilizza [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) per distribuire il pacchetto [Cartella progetti Archetipo AEM]\all\target\[appid].all-[versione].zip in tutte le istanze Author e Publish.
 
 >[!NOTE]
 >
 >
 >
->In caso di difficoltà durante l’accesso alla finestra di dialogo di accesso in un’istanza di pubblicazione per installare il pacchetto tramite Gestione pacchetti, prova ad accedere tramite il seguente URL: http://[URL server di pubblicazione]:[PORTA]/system/console. Questo ti consente di accedere all’istanza Publish e di procedere con il processo di installazione.
+>Se si verificano problemi durante l&#39;accesso alla finestra di dialogo di accesso in un&#39;istanza di pubblicazione per installare il pacchetto tramite Gestione pacchetti, provare ad accedere tramite il seguente URL: http://[URL server Publish]:[PORT]/system/console. Ciò ti consente di accedere all’istanza di Publish e di procedere con il processo di installazione.
 
 
-I Componenti core sono abilitati per il tuo ambiente. Nell’ambiente vengono distribuiti un modello modulo adattivo basato su Componenti core vuoto e un tema Canvas 3.0, che consente di: [creazione di componenti core basati su Adaptive Forms](create-a-headless-adaptive-form.md).
+I Componenti core sono abilitati per il tuo ambiente. Nell&#39;ambiente vengono distribuiti un modello modulo adattivo basato su Componenti core vuoti e un tema Canvas 3.0, che consente di [creare componenti core basati su Forms adattivo](create-a-headless-adaptive-form.md).
 
 ## Domande frequenti
 
 ### Cosa sono i Componenti core?
 
-Il [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) sono un set di componenti WCM (Web Content Management) standardizzati per l’AEM che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti web.
+I [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) sono un insieme di componenti WCM (Web Content Management) standardizzati per l&#39;AEM che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti Web.
 
 ### Quali sono tutte le funzionalità aggiunte all’abilitazione dei componenti core?
 

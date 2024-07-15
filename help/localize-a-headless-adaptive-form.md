@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Localizzare un modulo adattivo headless {#localize-a-headless-adaptive-form}
 
-<span class="preview"> Questo è un **LAVORO IN CORSO** articolo.</span>
+<span class="preview"> Questo è un articolo di **WORK IN PROGRESS**.</span>
