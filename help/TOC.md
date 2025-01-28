@@ -5,9 +5,9 @@ user-guide-description: Documentazione per i moduli adattivi headless Adobe Expe
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: 6fbc8605163c5f5415cadf5c19c96e1f68a23841
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '144'
 ht-degree: 4%
 
 ---
@@ -30,6 +30,8 @@ ht-degree: 4%
 + Crea moduli adattivi headless {#authoring-headless-adaptive-forms}
    + [Creare un modulo adattivo headless tramite l’editor Forms adattivo](create-a-headless-adaptive-form.md)
 + Riferimento sviluppatore {#developer-reference}
+   + [Portale per sviluppatori](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [Area di gioco del codice](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [API per moduli adattivi headless](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Domande frequenti](faq.md)
 + [Risoluzione dei problemi](troubleshooting.md)

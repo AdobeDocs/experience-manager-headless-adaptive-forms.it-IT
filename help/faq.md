@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: modulo adattivo headless, domande frequenti
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Puoi utilizzare l’app iniziale per eseguire il rendering e l’anteprima di un
 
 ## È possibile utilizzare moduli adattivi headless con framework personalizzati?
 
-I moduli adattivi headless si basano sulla [specifica standard](/help/assets/Headless-Adaptive-Form-Specification.pdf). Puoi estendere la specifica per utilizzarla per creare componenti personalizzati. Ad esempio, componenti per l’interfaccia utente di Chakra, Vue.js e altro ancora.
+I moduli adattivi headless si basano sulla [specifica standard](/help/assets/headless-adaptive-forms-specification.pdf). Puoi estendere la specifica per utilizzarla per creare componenti personalizzati. Ad esempio, componenti per l’interfaccia utente di Chakra, Vue.js e altro ancora.
 
 ## I moduli adattivi headless supportano i campi a cascata?
 
@@ -63,7 +63,7 @@ At this moment, you use the Adaptive Form Editor to specify the JSON structure a
 
 ## Posso utilizzare moduli adattivi headless con Angular SPA?
 
-Puoi utilizzare l’SDK per web per integrare i moduli adattivi headless con Angular SPA. È indipendente da qualsiasi struttura. Puoi utilizzare l’SDK di React come riferimento.
+Puoi utilizzare il Web SDK per integrare i moduli adattivi headless con SPA Angular. È indipendente da qualsiasi struttura. È possibile utilizzare React SDK come riferimento.
 
 <!-- ## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
 

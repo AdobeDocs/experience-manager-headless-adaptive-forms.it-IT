@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: headless, modulo adattivo, architettura
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 56ad9d8fefc4933847061ba6007ad367984bd2e0
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,8 @@ Oltre a fornire le API per convalidare i vincoli applicati ai vari campi di un m
 
 Tutti questi componenti sono inclusi in Archetipo AEM. Quando crei un progetto Archetipo AEM 37 o versione successiva per moduli adattivi headless, nel progetto viene inclusa la versione più recente delle librerie sopra elencate.
 
+* **Area di gioco codice**: [Area di gioco codice](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) è un ambiente interattivo progettato per gli sviluppatori per sperimentare, scoprire e testare le funzionalità di Headless Adaptive Forms.
+
 **Applicazione avviata**: Adobe ha inoltre rilasciato un&#39;applicazione avviata per aiutarti a iniziare rapidamente con i moduli adattivi headless.
 
 <!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
@@ -86,8 +88,9 @@ Core-Components: It enables use to render an Adaptive Form using JSON structure.
 
 **Estensione codice Visual Studio**: [Estensione codice Visual Studio](visual-studio-code-extension-for-headless-adaptive-forms.md) per creare una struttura JSON valida. Fornisce il supporto IntelliSense e la convalida per la struttura JSON dei moduli insieme a funzioni comuni come l’aggiunta, l’eliminazione o la ridenominazione di componenti di una struttura JSON.
 
-**Specifiche di Forms adattivo versione 2.0**: la specifica di Forms adattivo versione 2.0 fornisce informazioni dettagliate su tutti i componenti, i vincoli e i metodi disponibili per definire i moduli adattivi headless. La specifica è disponibile in formato [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
-
 **API HTTP e JavaScript**: [API HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) ti consentono di elencare, recuperare, convalidare, inviare e tenere traccia dello stato di invio dei moduli headless. [API JS](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) consente di utilizzare moduli adattivi headless con qualsiasi framework di interfaccia utente basato su JavaScript.
 
 **Formula JSON**: si tratta di un&#39;implementazione della grammatica dell&#39;espressione forms che consente di eseguire query sulla struttura JSON e creare regole per i moduli adattivi headless. La grammatica è una combinazione di funzioni e operatori simili a fogli di calcolo e [JMESPath](https://jmespath.org/) un linguaggio di query JSON. È possibile utilizzare [playground](https://opensource.adobe.com/json-formula/dist/index.html) per esplorare la sintassi e le funzionalità della formula JSON.
+
+**Specifiche di Forms adattivo versione 2.0**: la specifica di Forms adattivo versione 2.0 fornisce informazioni dettagliate su tutti i componenti, i vincoli e i metodi disponibili per definire i moduli adattivi headless. La specifica è disponibile in formato [PDF](/help/assets/headless-adaptive-forms-specification.pdf).
+
