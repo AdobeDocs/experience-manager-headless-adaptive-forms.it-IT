@@ -75,7 +75,7 @@ L’SDK per AEM as a Cloud Service (AEM SDK) offre agli sviluppatori un’esperi
 
    >[!NOTE]
    >
-   > Non fare doppio clic sul file .jar per avviarlo. Si verifica un [errore](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#troubleshooting-double-click).
+   > Non fare doppio clic sul file .jar per avviarlo. Si verifica un [errore](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=it#troubleshooting-double-click).
 
 1. Apri il prompt dei comandi:
    * In Windows, utilizzare l&#39;opzione **Esegui come amministratore** per aprire il prompt dei comandi in modalità avanzata.

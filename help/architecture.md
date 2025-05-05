@@ -76,7 +76,7 @@ Oltre a fornire le API per convalidare i vincoli applicati ai vari campi di un m
 
 Tutti questi componenti sono inclusi in Archetipo AEM. Quando crei un progetto Archetipo AEM 37 o versione successiva per moduli adattivi headless, nel progetto viene inclusa la versione più recente delle librerie sopra elencate.
 
-* **Area di gioco codice**: [Area di gioco codice](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) è un ambiente interattivo progettato per gli sviluppatori per sperimentare, scoprire e testare le funzionalità di Headless Adaptive Forms.
+* **Area di gioco codice**: [Area di gioco codice](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=it) è un ambiente interattivo progettato per gli sviluppatori per sperimentare, scoprire e testare le funzionalità di Headless Adaptive Forms.
 
 **Applicazione avviata**: Adobe ha inoltre rilasciato un&#39;applicazione avviata per aiutarti a iniziare rapidamente con i moduli adattivi headless.
 

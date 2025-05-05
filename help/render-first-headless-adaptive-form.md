@@ -125,7 +125,7 @@ Quando distribuisci il progetto all&#39;istanza dell&#39;SDK AEM, vengono aggiun
    La risoluzione delle dipendenze e la distribuzione del progetto possono richiedere molto tempo. In caso di errore durante la distribuzione del progetto, vedere l&#39;articolo [risoluzione dei problemi](troubleshooting.md) per informazioni sui problemi comuni e sulla loro risoluzione.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it#coding-against-the-right-aem-version) article : -->
 
 
 ### 3. Crea uno schema JSON per un modulo adattivo headless e caricalo nell’istanza SDK dell’AEM {#create-add-json-representation-of-headless-adaptive-forms}
@@ -180,9 +180,9 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it#building-and-installing).
     
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it#coding-against-the-right-aem-version) article : -->
 
 ### 4. Creare un modulo adattivo basato sul modello vuoto con componenti core {#create-adaptive-form-with-blank-with-core-components-template}
 

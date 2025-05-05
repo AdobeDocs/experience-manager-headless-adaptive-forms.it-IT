@@ -28,7 +28,7 @@ I moduli adattivi headless consentono di:
 * creare moduli multi-canale di alta qualità nel linguaggio di programmazione desiderato
 * integrare in modo nativo i moduli nelle app desktop e per dispositivi mobili, nei siti web e nelle applicazioni chat
 * riutilizzare i componenti proprietari dell’interfaccia utente con le applicazioni di Forms
-* sfrutta la potenza di [Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html)
+* sfrutta la potenza di [Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=it)
 
 Inoltre, puoi sviluppare i tuoi componenti per eseguire il rendering di un modulo utilizzando qualsiasi framework di interfaccia utente e linguaggio di programmazione a tua scelta. Puoi anche utilizzare i componenti React disponibili come predefiniti per il rendering di un modulo adattivo headless.
 
