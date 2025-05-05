@@ -90,7 +90,7 @@ L’SDK per AEM as a Cloud Service (AEM SDK) offre agli sviluppatori un’esperi
    * Lo switch `-r prerelease` abilita le funzionalità disponibili solo nei programmi prerelease e release limitate.
    * È possibile utilizzare `admin` come nome utente e password per lo sviluppo locale per ridurre il carico cognitivo.
 
-   Dopo l’avvio dell’AEM, la pagina di accesso si apre nel browser web. È inoltre possibile aprire la pagina di accesso per l&#39;istanza dell&#39;SDK AEM all&#39;indirizzo `http://localhost:<port>` nel browser Web. Ad esempio, [http://localhost:4502](Http://localhost:4502).
+   Dopo l’avvio dell’AEM, la pagina di accesso si apre nel browser web. È inoltre possibile aprire la pagina di accesso per l&#39;istanza dell&#39;SDK AEM all&#39;indirizzo `http://localhost:<port>` nel browser Web. Ad esempio, [http://localhost:4502](http://localhost:4502).
 
 1. Accedi all’istanza di authoring. Tocca l&#39;icona ![help](/help/assets/Help-icon.svg), quindi Tocca Informazioni su Adobe Experience Manager e accertati che il numero di versione includa il suffisso PRERELEASE.
 

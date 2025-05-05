@@ -204,7 +204,7 @@ Imposta il titolo della pagina Web che ospita il modulo su `Contact Us | WKND Ad
 
 ## Passaggio successivo
 
-Per impostazione predefinita, il kit di avvio utilizza i componenti Spectrum](https://spectrum.adobe.com/) di [Adobe per eseguire il rendering del modulo. Puoi creare e utilizzare componenti personalizzati o di terze parti. Ad esempio, utilizzando l’interfaccia utente Materiale di Google o l’interfaccia utente Chakra.
+Per impostazione predefinita, il kit di avvio utilizza i componenti Spectrum[&#128279;](https://spectrum.adobe.com/) di Adobe per eseguire il rendering del modulo. Puoi creare e utilizzare componenti personalizzati o di terze parti. Ad esempio, utilizzando l’interfaccia utente Materiale di Google o l’interfaccia utente Chakra.
 
 [utilizziamo l&#39;interfaccia utente dei materiali di Google](use-google-material-ui-react-components-to-render-a-headless-form.md) per eseguire il rendering del modulo Contattaci.
 

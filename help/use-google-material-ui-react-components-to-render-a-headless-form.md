@@ -35,7 +35,7 @@ I passaggi principali necessari per l’utilizzo dei componenti dell’interfacc
 
 ## 1. Installare l’interfaccia utente dei materiali di Google
 
-Per impostazione predefinita, il kit di avvio utilizza i componenti Spectrum](https://spectrum.adobe.com/) di [Adobe. Impostiamolo per utilizzare [l&#39;interfaccia utente dei materiali di Google](https://mui.com/):
+Per impostazione predefinita, il kit di avvio utilizza i componenti Spectrum[&#128279;](https://spectrum.adobe.com/) di Adobe. Impostiamolo per utilizzare [l&#39;interfaccia utente dei materiali di Google](https://mui.com/):
 
 1. Verificare che il kit di avvio non sia in esecuzione. Per arrestare il kit di avvio, apri il terminale, passa a **react-starter-kit-aem-headless-forms** e premi Ctrl-C (lo stesso avviene su Windows, Mac e Linux).
 
