@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti
+title: Domande frequenti su Headless Adaptive Forms
 description: Domande frequenti
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -9,18 +9,19 @@ level: Beginner, Intermediate
 keywords: modulo adattivo headless, domande frequenti
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '431'
 ht-degree: 1%
 
 ---
 
-# Domande frequenti {#headless-adaptive-forms-faq}
+# Domande frequenti (FAQ) {#headless-adaptive-forms-faq}
 
 ## Devo conoscere React.js per utilizzare moduli adattivi headless?
 
-Puoi utilizzare qualsiasi framework, libreria o lingua per eseguire il rendering di moduli adattivi headless e utilizzare le nostre API REST per convalidare e inviare i moduli. La libreria AF-core, fornita OOTB, è indipendente dal framework. Le librerie React-Render e React-component, fornite OOTB, sono utili per la tua comodità. Puoi sviluppare componenti personalizzati e utilizzarli senza limitazioni.
+Puoi utilizzare qualsiasi framework, libreria o lingua per eseguire il rendering di moduli adattivi headless e utilizzare le API REST di Adobe per convalidare e inviare i moduli. La libreria AF-core, fornita all’utente preconfigurata, è indipendente dal framework. Le librerie React-Render e React-componet, anch’esse pronte all’uso, sono utili per la tua comodità. Puoi creare componenti personalizzati senza essere limitato a quelli forniti.
+
 
 <!-- 
 ## Did Adobe release a new AEM Archetype for Headless adaptive forms?
@@ -29,9 +30,9 @@ You can use Archetype 37 with flag `includeFormsheadless` or later flag to creat
 
 -->
 
-## È necessario Forms as a Cloud Service Sandbox per utilizzare moduli adattivi headless?
+## È necessario disporre di una sandbox Forms as a Cloud Service per utilizzare moduli adattivi headless?
 
-Puoi utilizzare l’app iniziale per iniziare a sviluppare e formattare i moduli adattivi headless. È necessario che Forms as a Cloud Service ospiti e distribuisca moduli adattivi headless insieme alle funzionalità dei moduli back-end.
+Puoi utilizzare l’app iniziale per iniziare a sviluppare e formattare i moduli adattivi headless. Devi disporre di Forms as a Cloud Service per l’hosting e la distribuzione di moduli adattivi headless insieme alle funzionalità dei moduli back-end.
 
 <!-- ## Do I need an archetype project to develop Headless adaptive forms?
 
@@ -50,7 +51,7 @@ I moduli adattivi headless si basano sulla [specifica standard](/help/assets/hea
 
 ## I moduli adattivi headless supportano i campi a cascata?
 
-Nei campi a catena, il contenuto del secondo campo dipende dal contenuto scelto nel primo campo. Il [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&amp;args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) fornisce un esempio di campi a catena.
+Nei campi a catena, il contenuto del secondo campo dipende dal contenuto scelto nel primo campo. Il [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) fornisce un esempio di campi a catena.
 
 ## I moduli adattivi headless consentono la precompilazione dei moduli con dati personalizzati?
 
@@ -63,7 +64,7 @@ At this moment, you use the Adaptive Form Editor to specify the JSON structure a
 
 ## Posso utilizzare moduli adattivi headless con Angular SPA?
 
-Puoi utilizzare il Web SDK per integrare i moduli adattivi headless con SPA Angular. È indipendente da qualsiasi struttura. È possibile utilizzare React SDK come riferimento.
+Puoi utilizzare il Web SDK per integrare i moduli adattivi headless con l’applicazione a pagina singola di Angular. È indipendente da qualsiasi struttura. È possibile utilizzare React SDK come riferimento.
 
 <!-- ## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
 
@@ -82,7 +83,7 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 
 ## Esiste un plug-in per semplificare lo sviluppo di Headless AF?
 
-Sì, è disponibile un&#39;estensione per Microsoft Visual Studio Code. Fornisce un modo pratico per creare manualmente i moduli adattivi JSON headless.
+Sì: un’estensione codice di Visual Studio consente di creare manualmente moduli adattivi headless in JSON.
 
 ## Un modulo adattivo headless può connettersi a qualsiasi sistema CRM per leggere o scrivere dati?
 

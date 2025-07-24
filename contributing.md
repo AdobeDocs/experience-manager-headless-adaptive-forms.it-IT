@@ -1,8 +1,8 @@
 ---
-source-git-commit: 103a0312291d4831249d32e5fea7d20e0fc99d10
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 47%
 
 ---
 # Contributi
@@ -18,7 +18,7 @@ Il progetto aderisce al [Codice di condotta](code-of-conduct.md) di Adobe. Con l
 
 ## Documentazione relativa alla Guida per i collaboratori
 
-Consulta la [Guida per i collaboratori](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+Consulta la [Guida per i collaboratori](https://experienceleague.adobe.com/it/docs/contributor/contributor-guide/introduction).
 
 ## Hai una domanda?
 
@@ -26,11 +26,11 @@ Inizia segnalando un problema. I collaboratori attualmente impegnati su questo p
 
 ## Contratto di licenza per i collaboratori
 
-Tutti i contributi di terze parti a questo progetto devono essere accompagnati da un accordo di licenza del contributore firmata. In tal modo è concesso ad Adobe il permesso di ridistribuire i contributi come parte del progetto. [Firma il contratto di licenza](http://opensource.adobe.com/cla.html). È sufficiente inoltrare un CLA di Adobe una sola volta; se ne è già stato inviato uno in passato, non è necessario ripetere questa operazione.
+I collaboratori devono firmare un contratto di licenza da collaboratore prima di inviare qualsiasi contributo di terze parti a questo progetto. Questo contratto concede ad Adobe il permesso di ridistribuire i contributi come parte del progetto. [Firma il Contratto di licenza da collaboratore di Adobe](https://opensource.adobe.com/cla.html). È sufficiente inviare un CLA di Adobe una sola volta; se lo hai già inviato in passato, non è necessario ripetere questa operazione.
 
 ## Revisioni del codice
 
-Tutte le richieste devono essere presentate sotto forma di richieste pull e devono essere riviste dai committenti dei progetti. Per ulteriori informazioni sull’invio di richieste pull, leggi la [documentazione sulle richieste pull di GitHub](https://help.github.com/articles/about-pull-requests/).
+Invia tutti i contributi come richieste pull e i committer del progetto devono esaminarli. Per ulteriori informazioni sull’invio di richieste pull, leggi la [documentazione sulle richieste pull di GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -39,8 +39,8 @@ submitting a pull request!
 
 ## Da collaboratore a committente
 
-Apprezziamo i contributi della nostra community. Se desideri essere qualcosa di più di un collaboratore e diventare un committente con accesso completo in scrittura e avere voce in capitolo sul progetto, devi essere invitato al progetto. I committenti esistenti utilizzano un processo di designazione interno che deve raggiungere il consenso approssimativo (il silenzio rappresenta l’approvazione) prima di inviare gli inviti. Se ritieni di essere qualificato e desideri un coinvolgimento maggiore, rivolgiti ai committenti esistenti per parlarne con loro.
+Adobe è lieta di ricevere qualsiasi contributo e rivede quello fornito. Se desideri diventare un committer con accesso completo in scrittura e una voce in capitolo nel progetto, devi essere invitato al progetto. I committer esistenti utilizzano un processo di nomina interno che deve raggiungere un consenso pigro (silenzio assenso) prima di rilasciare gli inviti. Se ritieni di essere qualificato e di essere interessato a partecipare più attivamente, rivolgiti a uno dei committer attuali per discutere i passaggi successivi.
 
 ## Problemi di sicurezza
 
-I problemi di sicurezza non devono essere segnalati in questo strumento di gestione dei problemi, ma puoi [segnalarli ai nostri esperti di sicurezza](https://helpx.adobe.com/it/security/alertus.html).
+I problemi di sicurezza non devono essere segnalati in questo Issue tracker. [segnala un problema agli esperti di sicurezza di Adobe](https://helpx.adobe.com/it/security/alertus.html)

@@ -1,8 +1,8 @@
 ---
 title: Utilizzare gli eventi per gestire e inviare i dati dei moduli adattivi headless
-description: Utilizzare gli eventi per gestire e inviare i dati dei moduli adattivi headless
+description: Utilizza gli eventi per gestire e inviare i dati dei moduli adattivi headless.
 hide: false
-source-git-commit: ddd353329dfe5b47734d904b9a5e684051becc5b
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -16,10 +16,10 @@ Finora imparerai a [creare un modulo adattivo headless personalizzato](create-an
 
 In questo articolo viene illustrato come inviare dati a un endpoint Rest. È possibile configurare il modulo per inviare i dati a qualsiasi origine dati
 
-## Informazioni sul modello dati
+## Comprendere il modello dati
 
 
 
-## Utilizzo di eventi per comunicare con il modello dati
+## Utilizzare gli eventi per comunicare con il modello dati
 
-## Utilizzo di eventi per inviare dati a un&#39;origine dati
+## Utilizzare gli eventi per inviare dati a un&#39;origine dati

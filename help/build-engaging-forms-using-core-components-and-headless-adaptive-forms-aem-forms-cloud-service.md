@@ -5,20 +5,22 @@ description: Creare moduli efficaci utilizzando i componenti core e headless
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: bcc51bcae3b26cf20e7c0b5b75935bf69a991731
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '2452'
-ht-degree: 85%
+ht-degree: 56%
 
 ---
 
-# Creare Forms coinvolgenti utilizzando componenti core e Forms adattivo headless in AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
+# Creare Forms coinvolgenti utilizzando componenti core e Forms adattivo headless su AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
+
+<!-- This article is completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you add the required missing image ALT tags.  -->
 
 ## Panoramica del workshop {#lab-overview}
 
-In questo workshop pratico imparerai:
+In questo laboratorio pratico imparerai quanto segue:
 
-come utilizzare AEM Forms per creare facilmente moduli adattivi utilizzando i componenti core più recenti, coerenti con AEM Sites, per rendere possibili esperienze di acquisizione dei dati omnicanale grazie alla distribuzione di moduli adattivi come moduli headless al web, ai mobile e alle chat. Inoltre, puoi imparare le best practice relative allo stile, alle personalizzazioni e allo sviluppo front-end.
+Come utilizzare AEM Forms per creare moduli adattivi facilmente utilizzando i componenti core più recenti. Questi componenti sono coerenti con AEM Sites e consentono esperienze di acquisizione dati omnicanale distribuendo moduli adattivi come moduli headless su web, dispositivi mobili e chat. Inoltre, puoi imparare le best practice relative allo stile, alle personalizzazioni e allo sviluppo front-end.
 
 ## Elementi principali da ricordare {#key-takeaways}
 
@@ -30,15 +32,15 @@ come utilizzare AEM Forms per creare facilmente moduli adattivi utilizzando i co
 
 ## Prerequisiti {#prerequisites}
 
-Per usare queste mani sul laboratorio:
+Per utilizzare questo laboratorio pratico:
 
 * Installa la [versione più recente di Git](https://git-scm.com/downloads). Se sei un nuovo utente di Git, vedi [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 * Installa [Node.js 16.13.0 o versione successiva](https://nodejs.org/it/download/). Se hai poca esperienza con Node.js, consulta [Come installare Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
-* [Abilita i componenti core adattivi di Forms](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) per l&#39;ambiente AEM Forms as a Cloud Service.
+* [Abilita i componenti core adattivi di Forms](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) per il tuo ambiente AEM Forms as a Cloud Service.
 
-* Installa [Microsoft Visual Studio Code](https://code.visualstudio.com/download) o qualsiasi editor di testo normale. Esempi in un documento utilizzano Microsoft Visual Studio Code.
+* Installa [Microsoft Visual Studio Code](https://code.visualstudio.com/download) o qualsiasi editor di testo normale. Esempi in questo documento utilizzano Microsoft Visual Studio Code.
 
 
 
@@ -54,10 +56,9 @@ In questa lezione imparerai a conoscere l’ambiente di AEM Forms as a Cloud Ser
 
 ### Esercizio {#lesson-1-excercise}
 
-1. Apri il browser e immetti l’URL dell’ambiente di authoring di Cloud Service. Ad esempio:
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. Apri il browser e immetti l’URL dell’ambiente di authoring di Cloud Service. <!-- URL is 404! EXPLAIN THE URL IS FOR ILLUSTRATION PURPOSES ONLY? For example: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html) -->
 
-1. Accedi all’ambiente di authoring del Cloud Service.
+1. Accedi all’ambiente di authoring di Cloud Service.
    ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
 1. Per passare all&#39;interfaccia utente di AEM Forms, fare clic su **Forms > Forms &amp; Documents**.
@@ -83,9 +84,8 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
 
 1. Crea un endpoint di invio per il modulo:
 
-   1. Apri <https://requestbin.com/> in una nuova scheda del browser.
+   1. Apri <https://pipedream.com/requestbin> in una nuova scheda del browser.
    1. Fai clic su **Crea un bin pubblico** e copia l’URL dell’endpoint.
-
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -93,29 +93,23 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
 1. Crea un modulo adattivo utilizzando l’interfaccia della procedura guidata:
 
    1. Nella scheda del browser utilizzata nella lezione 1, vai all’interfaccia web di AEM Forms as Cloud Service e passa a moduli e documenti.
-
       ![](/help/assets/screenshot2028114029.png)
 
-   1. Fai clic su **Crea** e seleziona Modulo adattivo.
-
+   1. Fai clic su **Crea** > **Modulo adattivo**.
       ![](/help/assets/screenshot2028114629.png)
 
    1. Seleziona il modello **Vuoto con i componenti core** dalla schermata di selezione del modello come mostrato di seguito:
-
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Fai clic sulla scheda **Stile** e seleziona il tema **wknd-theme** come mostrato di seguito:
-
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
-   1. Fai clic sulla scheda **Invio**, seleziona la scheda **Invia all&#39;endpoint REST** e specifica il contenitore pubblico nel campo **URL per la richiesta POST**, come illustrato di seguito:
-
+   1. Fai clic sulla scheda **Invio**, seleziona la scheda **Invia all&#39;endpoint REST** e specifica il contenitore pubblico nel **URL per il campo richiesta POST**, come illustrato di seguito:
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
-   1. Fai clic su **Crea**. Specifica un nome e un titolo per il modulo. Ad esempio, **registrazione**. Fai clic su **Crea**.
+   1. Fai clic su **Crea**. Specificare un nome e un titolo nel modulo. Ad esempio, **registrazione**. Fai clic su **Crea**.
 
    1. Viene aperto l’editor di moduli adattivi. Chiudi eventuali pop-up o finestre di dialogo relativi a preferenze o informazioni. Fai clic sul browser Componenti nella barra a sinistra e aggiungi i componenti **Intestazione** e **Piè di pagina** rispettivamente all&#39;inizio e alla fine del modulo vuoto.
-
       ![](/help/assets/screenshot2028121929.png)
 
    1. Trascina i componenti dal browser Componenti per creare un modulo simile al seguente:
@@ -127,7 +121,6 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
    1. Fai clic sul componente **Numero di telefono** in modo da visualizzare il menu a comparsa. Fai clic sull’**icona a forma di chiave inglese** nel menu per configurare il campo.
 
    1. Apri la **scheda convalide**, contrassegna il campo come **Obbligatorio** e fai clic su **Fine**. Viene visualizzato il messaggio di operazione riuscita.
-
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -139,20 +132,18 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
    1. Compila il modulo con dati fittizi.
 
    1. Invia il modulo.
-
       ![](/help/assets/screenshot2028125729.png)
 
    1. Nella scheda Raccoglitore richieste, controlla i dati inviati.
-
       ![](/help/assets/screenshot2028125829.png)
 
-1. Aggiungi interattività al modulo con le regole:
+1. Aggiungi interattività al modulo con regole:
 
-   1. Fai clic sulla **Seleziona la casella per ricevere il 5% di sconto** del componente. Sulla barra degli strumenti delle opzioni fare clic sull&#39;icona Regole. Viene visualizzata l’opzione Editor regole.
+   1. Fai clic sulla **Seleziona la casella per ricevere il 5% di sconto** del componente. Sulla barra degli strumenti delle opzioni fare clic sull&#39;icona Regole. Viene visualizzata l’opzione Editor regole (Rule Editor).
 
    1. Crea una regola: quando l&#39;opzione **Seleziona la casella per ricevere il 5% di sconto** è selezionata, le opzioni per l&#39;applicazione della carta di credito sono disabilitate.
 
-1. Publish il modulo.
+1. Pubblica il modulo.
 
    1. Aprire l&#39;interfaccia di gestione di AEM Forms, ad esempio `https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments`, e selezionare il modulo.
 
@@ -164,10 +155,10 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
 
       ![](/help/assets/screenshot2028115729.png)
 
-      L’URL di pubblicazione del modulo sarà simile a `https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html`.
+      L&#39;URL pubblicato del modulo sarà simile a `https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html`.
 
-   1. Per visualizzare il modulo pubblicato, sostituisci l’ID del programma (pXXXXXX) e l’ID dell’ambiente (eXXXXXX) nell’URL precedente con l’ID 
-del tuo ambiente.
+   1. Per visualizzare il modulo pubblicato, sostituisci l’ID del programma (pXXXXXX) e l’ID dell’ambiente (eXXXXXX) nell’URL indicato sopra con gli ID del tuo
+ambiente.
 
 ## Lezione 3
 
@@ -181,7 +172,7 @@ In questa lezione, in qualità di sviluppatore front-end, ti verrà illustrato c
 
 ### Esercizio
 
-Configurazione dell’archivio locale del tema:
+Imposta un archivio locale del tema:
 
 1. Apri il prompt o la shell dei comandi con i diritti di amministratore:
 
@@ -229,12 +220,11 @@ Configurazione dell’archivio locale del tema:
 
      ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
 
-1. Creare un utente locale nell’ambiente AEM.
+1. Crea un utente locale nell’ambiente AEM.
 
    >[!NOTE]
-   > Per creare un utente locale:
-   > Vai a `AEM Home` > `Tools` > `Security` > `Users`
-   > Assicurati che l’utente sia membro del gruppo forms-users.
+   > Per creare un utente locale, vai a `AEM Home` > `Tools` > `Security` > `Users`.
+   > Assicurati che l’utente sia un membro del gruppo forms-users.
 
 
 1. Nella finestra del prompt dei comandi esegui il comando seguente:
@@ -247,10 +237,10 @@ Configurazione dell’archivio locale del tema:
 
    >[!NOTE]
    >
-   > * Se viene visualizzato un messaggio in cui viene richiesto di aggiornare npm tramite il comando `npm notice Run npm nstall -g npm@9.6.0`, ignorare il messaggio.
-   > * Non eseguire altri comandi npm a meno che non sia indicato nella cartella di lavoro.
+   > * Se viene visualizzato un messaggio in cui viene richiesto di aggiornare `npm` tramite il comando `npm notice Run npm nstall -g npm@9.6.0`, ignorare il messaggio.
+   > * A meno che non siano presenti istruzioni nella cartella di lavoro, non eseguire altri comandi `npm`.
 
-1. Ora, per visualizzare l’anteprima del modulo, esegui il comando seguente.
+1. Eseguire il comando seguente per visualizzare l&#39;anteprima del modulo.
 
    ```Shell
    npm run live
@@ -258,14 +248,14 @@ Configurazione dell’archivio locale del tema:
 
    ![](/help/assets/screenshot2028117229.png)
 
-   Una volta eseguito il comando precedente, attendere il messaggio `webpack compiled` e si viene reindirizzati a una pagina di accesso AEM.
+   Una volta eseguito il comando precedente, attendere il messaggio `webpack compiled` e si viene reindirizzati a una pagina di accesso di AEM.
 
-1. Fare clic su **Accedi localmente (solo attività amministratore)** nella pagina di accesso AEM.
+1. Fai clic su **Accedi localmente (solo attività amministratore)** nella pagina di accesso di AEM.
 1. Immettere le credenziali per l&#39;utente locale creato e il modulo verrà visualizzato in una scheda del browser.
 
    >[!NOTE]
    >
-   >Se, dopo l’esecuzione del comando `npm run live`, nel browser viene visualizzata una schermata vuota per più di 3-4 minuti, cambia `localhost` nell’URL del browser con 127.0.0.1 e premi **Invio**.
+   >Se si verifica una schermata vuota nel browser dopo aver eseguito il comando `npm run live` per più di 3-4 minuti, modificare `localhost` nell&#39;URL del browser in 127.0.0.1 e premere **Invio**.
 
 
    ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
@@ -283,26 +273,26 @@ Configurazione dell’archivio locale del tema:
 
    ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
 
-1. Aggiorna il browser e invia il modulo. Nota che il colore dell’errore è stato modificato anche nel campo del nome.
+1. Aggiorna il browser e invia il modulo. Si noti che il colore dell&#39;errore nel campo del nome è cambiato di conseguenza.
 
    ![](/help/assets/screenshot2028121129.png)
 
-1. Nel prompt dei comandi, premi **CTRL+C**, immetti **Y** e premi il tasto **Invio** per interrompere il processo npm. È importante interrompere il server npm in modo che non entri in conflitto con il successivo set di esercizi.
+1. Nel prompt dei comandi premere **CTRL+C**, immettere **Y** e premere **Invio** per terminare il processo npm. È importante interrompere il server npm in modo che non entri in conflitto con il successivo set di esercizi.
 1. Chiudi le finestre di Visual Studio Code e il prompt dei comandi.
 
 ## Lezione 4
 
 ### Obiettivo
 
-Eseguire il rendering del modulo per web/mobile e altre interfacce come modulo headless.
+Esegui il rendering del modulo su Web/dispositivi mobili e altre interfacce come modulo headless.
 
 ### Contesto della lezione
 
-In questa lezione, in qualità di sviluppatore front-end, ti verrà illustrato come eseguire il rendering del modulo adattivo creato in precedenza come modulo headless utilizzando il framework di progettazione di React Spectrum.
+In questa lezione, in qualità di sviluppatore front-end, imparerai a eseguire il rendering del modulo adattivo creato in precedenza come modulo headless utilizzando un framework di progettazione spettro React.
 
 ### Esercizio
 
-Configurazione dell’archivio locale utilizzando il progetto iniziale di React:
+Configurare un archivio locale utilizzando il progetto iniziale React:
 
 1. Apri il prompt dei comandi utilizzando i diritti di amministratore.
 
@@ -314,7 +304,7 @@ Configurazione dell’archivio locale utilizzando il progetto iniziale di React:
    cd c:\git
    ```
 
-1. Per clonare il progetto iniziale di React del modulo adattivo, utilizza il comando seguente:
+1. Utilizza il seguente comando per clonare il progetto iniziale React del modulo adattivo:
 
    ```Shell
    git clone https://github.com/adobe/react-starter-kit-aem-headless-forms
@@ -339,21 +329,20 @@ Configurazione dell’archivio locale utilizzando il progetto iniziale di React:
 
 Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione del cloud service:
 
-1. Rinomina il file env_template in file .env. Per rinominarlo, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona l’opzione **Rinomina**.
+1. Rinominare il file env_template nel file env. Per rinominarlo, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona l’opzione **Rinomina**.
 
    ![](/help/assets/screenshot2028117629.png){width="50%" align="left"}
 
    ![](/help/assets/screenshot2028117729.png)
 
 1. Imposta i seguenti valori per le variabili nel file .env. Dopo aver aggiornato le variabili, salva il file.
-
    * **AEM_URL**: specifica l’URL dell’ambiente di pubblicazione del cloud service. Ad esempio `https://publish-p105303-e986623.adobeaemcloud.com`
 
    * **AEM_FORM_PATH**: specifica il percorso del modulo adattivo creato nella lezione precedente. Ad esempio `/content/forms/af/registration/`
 
      ![](/help/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
-1. Apri la finestra dei comandi, assicurati di essere nella directory react-starter-kit-aem-headless-forms ed esegui il seguente comando:
+1. Apri la finestra dei comandi, assicurati di essere nella directory **react-starter-kit-aem-headless forms** ed esegui il comando seguente:
 
    ```Shell
    npm install
@@ -370,18 +359,18 @@ Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione d
 
    ![](/help/assets/screenshot2028118129.png)
 
-   Il comando precedente avvia un server di sviluppo locale che eseguirà il rendering della definizione del modulo recuperata da AEM in modo headless utilizzando la libreria front-end di React Spectrum.
+   Il comando precedente avvia un server di sviluppo locale che esegue il rendering della definizione del modulo recuperata da AEM in modo headless utilizzando la libreria front-end spettro React.
 
    >[!NOTE]
    >
    > 
-   > Se, dopo l’esecuzione del comando `npm start`, nel browser viene visualizzata una schermata vuota per più di 3-4 minuti, cambia `localhost` nell’URL del browser con 127.0.0.1 e premi **Invio**.
+   > Se si verifica una schermata vuota nel browser dopo aver eseguito il comando `npm start` per più di 3-4 minuti, modificare `localhost` nell&#39;URL del browser in 127.0.0.1 e premere **Invio**.
 
    ![](/help/assets/screenshot2028118229.png)
 
-Verifichiamo l’esecuzione delle regole in questo modulo headless:
+Controlliamo l’esecuzione delle regole in questo modulo headless:
 
-1. Scegli l’opzione **Seleziona la casella per ricevere il 5% di sconto**. L’opzione successiva per la richiesta della carta di credito è disabilitata.
+1. Scegli l’opzione **Seleziona la casella per ricevere il 5% di sconto**. L&#39;opzione successiva per richiedere una carta di credito è disabilitata.
 
    ![](/help/assets/screenshot2028126229.png)
 
@@ -391,12 +380,12 @@ Verifichiamo l’esecuzione delle regole in questo modulo headless:
 
 Apporta le modifiche al modulo sul server come utente aziendale e visualizza le modifiche riprodotte automaticamente nel modulo headless.
 
-1. Apri l’interfaccia di gestione di AEM Forms nel browser. Ad esempio: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
+1. Apri l’interfaccia di gestione di AEM Forms nel browser. <!-- URL is 404. Consider saying the path is for illlustration purposes only. For example, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments). -->
 
-1. Selezionare il modulo **contactus** e fare clic su **Modifica.** Il modulo viene aperto nell’editor di moduli adattivi.
+1. Selezionare il modulo **`contactus`** e fare clic su **Modifica.** Il modulo viene aperto nell’editor di moduli adattivi.
 
 
-1. Seleziona il campo **Numero di telefono** e fai clic sull’**icona Modifica (a forma di matita)** nella barra degli strumenti. Se la barra degli strumenti a comparsa non è visibile, passa alla modalità Modifica facendo clic sul pulsante **Modifica** in alto a destra, a sinistra del pulsante **Anteprima**.
+1. Seleziona il campo **Numero di telefono** e fai clic sull’**icona Modifica (a forma di matita)** nella barra degli strumenti. Se non è possibile visualizzare la barra degli strumenti popup, passare alla modalità Modifica. Fai clic sul pulsante **Modifica** in alto a destra, da sinistra a **Anteprima**.
 
    ![](/help/assets/screenshot2028119629.png)
 
@@ -404,7 +393,7 @@ Apporta le modifiche al modulo sul server come utente aziendale e visualizza le 
 
    ![](/help/assets/screenshot2028119729.png)
 
-Pubblichiamo il modulo aggiornato per propagare le modifiche all’ambiente di pubblicazione.
+Pubblichiamo il modulo aggiornato per propagare le modifiche all’ambiente pubblicato.
 
 1. Nella scheda dell’interfaccia di gestione di AEM Forms, seleziona il modulo di registrazione e fai clic su **Annulla pubblicazione**. Se non viene visualizzato il pulsante **Annulla pubblicazione**, vai al passaggio 3 per pubblicare le modifiche direttamente.
 
@@ -414,7 +403,7 @@ Pubblichiamo il modulo aggiornato per propagare le modifiche all’ambiente di p
 
 1. Fai clic su **Pubblica**. Fai clic su **Chiudi** nella rispettiva finestra di dialogo.
 
-1. Aggiorna la scheda del browser con il modulo headless visualizzato. Nota che l’etichetta del numero di telefono è stata modificata in Numero cellulare.
+1. Aggiorna la scheda del browser con il modulo headless visualizzato. Nota: l&#39;etichetta del numero di telefono è stata modificata in Mobile Number (Numero cellulare).
 
    ![](/help/assets/screenshot2028120529.png)
 
@@ -436,7 +425,7 @@ In questa lezione, in qualità di sviluppatore front-end, ti verrà illustrato c
 
 ### Esercizio
 
-Imposta l’archivio locale utilizzando il progetto iniziale dell’interfaccia utente Material:
+Configurate un repository locale utilizzando il progetto iniziale dell&#39;interfaccia utente materiale:
 
 1. Apri il prompt dei comandi utilizzando i diritti di amministratore.
 
@@ -449,7 +438,7 @@ Imposta l’archivio locale utilizzando il progetto iniziale dell’interfaccia 
    cd c:\git
    ```
 
-1. Esegui i seguenti comandi nell’ordine elencato per creare una cartella denominata “mui” e passa alla cartella “mui” utilizzando i seguenti comandi:
+1. Eseguire i comandi seguenti nell&#39;ordine elencato per creare una cartella denominata `mui` e passare alla cartella `mui` utilizzando i comandi seguenti:
 
    ```Shell
    mkdir mui
@@ -457,7 +446,7 @@ Imposta l’archivio locale utilizzando il progetto iniziale dell’interfaccia 
    cd mui
    ```
 
-1. Per clonare il progetto iniziale di React del modulo adattivo, utilizza il comando seguente:
+1. Utilizza il seguente comando per clonare il progetto iniziale React del modulo adattivo:
 
    ```Shell
    git clone -b mui-lab https://github.com/adobe/react-starter-kit-aem-headless-forms
@@ -477,7 +466,7 @@ Imposta l’archivio locale utilizzando il progetto iniziale dell’interfaccia 
 
 Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione del cloud service:
 
-1. Rinomina il file **env_template** in file **.env**. Per rinominarlo, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona **Rinomina**.
+1. Rinomina il file **env_template** nel file **.env**. Per rinominarlo, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona **Rinomina**.
 
    ![](/help/assets/screenshot2028126629.png){width="50%" align="left"}
 
@@ -510,13 +499,13 @@ dell’interfaccia utente Google Material.
 
    >[!NOTE]
    >
-   >Se, dopo l’esecuzione del comando `npm start`, nel browser viene visualizzata una schermata vuota per più di 3-4 minuti, cambia `localhost` nell’URL del browser con 127.0.0.1 e premi **Invio**.
+   >Se si verifica una schermata vuota nel browser dopo aver eseguito il comando `npm start` per più di 3-4 minuti, modificare `localhost` nell&#39;URL del browser in 127.0.0.1 e premere **Invio**.
 
    ![](/help/assets/screenshot2028127229.png)
 
 1. Per valutare l’esecuzione della stessa logica di business nella rappresentazione del modulo:
 
-   Fai clic su **Seleziona la casella per ricevere il 5% di sconto**. L’opzione successiva **Desideri richiedere il modulo per la carta di credito della società We.Finance?** viene disattivata.
+   Fai clic su **Seleziona la casella per ricevere il 5% di sconto**. Opzione successiva **Richiedere il modulo per carta di credito aziendale `We.Finance`?** viene disattivata.
 
    ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
 
@@ -528,7 +517,7 @@ Creare un aspetto alternativo del modulo headless utilizzando le varianti dei co
 
 ### Contesto della lezione
 
-In questa lezione, in qualità di sviluppatore front-end, ti verrà illustrato come creare una rappresentazione alternativa di componenti diversi utilizzando l’interfaccia utente Material per il modulo adattivo creato in precedenza dall’utente aziendale.
+In questa lezione, come sviluppatore front-end, imparerai a creare una rappresentazione alternativa di diversi componenti. Utilizzi l’interfaccia utente Materiale per il modulo adattivo creato in precedenza dall’utente aziendale.
 
 ### Esercizio
 
@@ -550,18 +539,18 @@ Aggiorna la variante dei componenti nel progetto headless. Per modificare la var
 
    ![](/help/assets/screenshot2028127629.png)
 
-   È necessario utilizzare le maiuscole corrette per la variante “OutlineInput”; in caso contrario la compilazione avrà esito negativo. La compilazione dell’ambiente di sviluppo locale inizia automaticamente nel prompt dei comandi. Attendi che venga visualizzato il seguente messaggio:
+   È essenziale utilizzare l’iniziale maiuscola corretta per la variante &quot;OutliningInput&quot;, altrimenti la compilazione non riuscirà. La compilazione dell’ambiente di sviluppo locale inizia automaticamente nel prompt dei comandi. Attendi che venga visualizzato il seguente messaggio:
 
    `webpack 5.75.0 compiled with 3 warnings in 6659 ms`
    `inside proxy req`
    `setting new origin header`
 
-1. Se la pagina nel browser non si aggiorna automaticamente, aggiornala per visualizzare il componente di input di testo con una variante diversa.
+1. Aggiorna il browser, se non si aggiorna automaticamente, per vedere che il componente di input del testo utilizza una variante diversa.
 
    ![](/help/assets/screenshot2028127729.png)
 
 
-   Questa modifica viene applicata agli utenti finali senza alcuna modifica alla definizione del modulo nel server di AEM Forms ed è specifica per il canale headless in esame. Per esempio, un canale web in questo workshop.
+   Questa modifica viene applicata agli utenti finali senza alcuna modifica alla definizione del modulo nel server di AEM Forms ed è specifica per il canale headless in esame. Ad esempio, un canale web in questo laboratorio.
 
    ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
 
@@ -572,7 +561,7 @@ Aggiorna la variante dei componenti nel progetto headless. Per modificare la var
 
 +++ La procedura guidata per moduli adattivi è disponibile pubblicamente?
 
-Sì, è disponibile in AEM Forms as Cloud Service.
+Sì, è disponibile con AEM Forms as Cloud Service.
 
 +++
 
@@ -595,7 +584,7 @@ No, i moduli headless utilizzano la stessa metrica del valore di licenza, numero
 
 +++
 
-+++ I componenti core e i moduli headless sono disponibili in AEM Forms 6.5?
++++ I componenti core e i moduli headless sono disponibili con AEM 6.5 Forms?
 
 Sì, sia i componenti core per moduli adattivi che i moduli headless sono disponibili in AEM Forms 6.5 Service Pack 16 e versioni successive.
 
@@ -604,16 +593,17 @@ Sì, sia i componenti core per moduli adattivi che i moduli headless sono dispon
 
 ## Passaggi successivi
 
-Ora che hai imparato a creare i moduli adattivi e a distribuirli su più canali utilizzando moduli headless, puoi provare a mettere in pratica le tue nuove competenze. Buon lavoro, e continua a creare e distribuire esperienze eccezionali con acquisizione dati, per i tuoi utenti finali ovunque si trovano e su larga scala!
+Ora sai come creare moduli adattivi e distribuirli tra i canali con moduli headless. Utilizza queste competenze per creare esperienze di acquisizione dati scalabili e di alta qualità ovunque si trovino gli utenti.
+
 
 ## Riferimenti
 
-* [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it)
+* [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
+* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Aggiornare lo stile per moduli adattivi basati su componenti core](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=it)
+* [Aggiornare lo stile per moduli adattivi basati su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Moduli adattivi headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=it)
+* [Moduli adattivi headless](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Utilizzo dello starter kit Headless React](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=it)
+* [Utilizzo di un kit di avvio per la reazione headless](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

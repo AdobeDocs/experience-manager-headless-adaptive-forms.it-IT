@@ -9,21 +9,21 @@ level: Beginner, Intermediate
 keywords: headless, moduli adattivi, estensione codice Visual Studio
 hide: false
 exl-id: 11960e91-6c09-48d4-9d57-37537f808cd4
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
 
 # Estensione Microsoft Visual Studio Code per moduli adattivi headless
 
-Se si utilizza Microsoft® Visual Studio Code come IDE, è possibile utilizzare l&#39;estensione Adaptive Forms per Microsoft Visual Studio Code. L’estensione:
+Se si utilizza Microsoft® Visual Studio Code come IDE (Integrated Development Environment), è possibile utilizzare l&#39;estensione Adaptive Forms per Microsoft Visual Studio Code. L’estensione:
 
-* Aggiunge funzionalità IntelliSense per Forms adattivo a Visual Studio Code
-* Convalida e completamento automatico della sintassi JSON per i componenti dei moduli adattivi headless
-* Fornisce un pannello per navigare facilmente nella struttura di un modulo adattivo headless
-* Aiuta a tradurre un modulo adattivo headless
+* Aggiunge funzionalità IntelliSense per Forms adattivo a Visual Studio Code.
+* Aiuta a convalidare e completare automaticamente la sintassi JSON per i componenti dei moduli adattivi headless.
+* Naviga facilmente nella struttura di un modulo adattivo headless tramite un pannello.
+* Aiuta a tradurre un modulo adattivo headless.
 
 <!-- 
 
@@ -51,4 +51,4 @@ Adobe provides an extension for Microsoft&reg; Visual Studio Code to make it eas
    ![Installazione dell&#39;estensione](/help/assets/install-extension.png)
 
 
-   Per informazioni sui file con estensione vsix, vedere [Guida in linea di Microsoft Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix).
+   Per informazioni sui file con estensione vsix, vedere [Guida in linea di Microsoft Visual Studio Code](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_install-from-a-vsix).

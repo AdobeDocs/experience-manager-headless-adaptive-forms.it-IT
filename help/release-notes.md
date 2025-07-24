@@ -1,25 +1,35 @@
 ---
-title: Panoramica dei moduli adattivi headless AEM
-description: Panoramica dei moduli adattivi headless AEM.
+title: Panoramica di AEM Headless Adaptive Forms
+description: Panoramica dei moduli adattivi headless di AEM.
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 3%
+source-wordcount: '477'
+ht-degree: 4%
 
 ---
 
 
 # Note sulla versione
 
-Benvenuti in Experience Manager Headless moduli adattivi versione precedente per l’adozione. Continua a leggere per risorse e istruzioni su come iniziare e sfruttare al meglio la versione.
+Benvenuto nella versione precedente dell’utente di Experience Manager Headless Adaptive Forms. Continua a leggere per risorse e istruzioni su come iniziare e sfruttare al meglio la versione.
 
-Puoi utilizzare i moduli adattivi headless di Adobe Experience Manager per creare applicazioni Forms utilizzando framework dell’interfaccia utente front-end come React, Angular e altro ancora e utilizzare Adaptive Forms Web SDK per funzionalità come la gestione dello stato, la convalida e le integrazioni con vari altri punti di contatto.
+Utilizza i moduli adattivi headless di Adobe Experience Manager per creare applicazioni per moduli con framework front-end, come React, Angular e altri. Utilizza Adaptive Forms Web SDK per la gestione dello stato, la convalida e l’integrazione con punti di contatto aggiuntivi.
+
 
 La versione precedente di Adobe consente di accedere all&#39;utilizzo di moduli adattivi headless in un [ambiente di sviluppo locale](setup-development-environment.md). Puoi utilizzare l’ambiente di sviluppo locale per generare e testare moduli adattivi headless.
 
-I moduli adattivi headless vengono costantemente migliorati. Per rimanere aggiornato sugli sviluppi più recenti, visita questa pagina regolarmente. Questa pagina fornisce informazioni sull’accesso in anteprima, sulle versioni più recenti, sulle nuove funzioni, sui miglioramenti, sulle correzioni di bug, sulle funzionalità obsolete, su istruzioni speciali e sui piani futuri di modifica.
+I moduli adattivi headless ricevono miglioramenti su base continuativa. Per rimanere aggiornato sugli sviluppi più recenti, visita questa pagina regolarmente. In questa pagina vengono fornite informazioni sui seguenti elementi:
+
+* accesso anticipato
+* ultime versioni
+* nuove funzioni
+* Miglioramenti
+* correzioni di bug
+* funzionalità obsoleta
+* istruzioni speciali
+* Modifiche programmate per il futuro
 
 <!-- 
 
@@ -44,13 +54,13 @@ I moduli adattivi headless vengono costantemente migliorati. Per rimanere aggior
 
 Nel percorso per portare all’utente i moduli adattivi headless di Adobe Experience Manager, nella prima versione sono disponibili i seguenti artefatti:
 
-### AEM FORMS AS A CLOUD SERVICE SDK
+### AEM Forms as a Cloud Service SDK
 
 AEM Forms as a Cloud Service SDK per aiutarti a creare, archiviare e recuperare moduli adattivi headless. Consente inoltre di precompilare, convalidare le regole lato server e inviare servizi per moduli adattivi headless.
 
 ### Forms Web SDK
 
-Forms Web SDK fornisce le API per convalidare i vincoli applicati ai vari campi di un modulo e gli hook per collegare la struttura JSON del modulo al framework dell’interfaccia utente. Fornisce anche React Renderer&#x200B; per moduli adattivi headless, per facilitare l’integrazione di un modulo adattivo headless nell’applicazione. Sono disponibili i seguenti componenti di Web SDK:
+Forms Web SDK fornisce le API per convalidare i vincoli applicati ai vari campi di un modulo e gli hook per connettere la struttura JSON del modulo al framework dell’interfaccia utente. Fornisce anche React Renderer&#x200B; per moduli adattivi headless, per facilitare l’integrazione di un modulo adattivo headless nell’applicazione. Sono disponibili i seguenti componenti di Web SDK:
 
 * **[@aemforms/af-react-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
 * **[@aemforms/af-react-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
@@ -60,13 +70,13 @@ Forms Web SDK fornisce le API per convalidare i vincoli applicati ai vari campi 
 
 #### Storybook
 
-[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fornisce una panoramica dei diversi componenti dei moduli adattivi headless. Inoltre, fornisce un elenco di tutti i componenti supportati, con le proprietà e i vincoli corrispondenti.
+Il [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fornisce una panoramica dei diversi componenti dei moduli adattivi headless. Inoltre, fornisce un elenco di tutti i componenti supportati, con le proprietà e i vincoli corrispondenti.
 
 ### Componente core Forms
 
 <!-- Forms components are the structural elements that constitute the content of the form being authored. These components provide various form fields and ability to customize those fields. -->
 
-I componenti core sono un set di componenti WCM (Web Content Management) standardizzati che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei moduli. Il componente Contenitore Forms è un componente core. Consente di incorporare ed eseguire il rendering di una struttura JSON di moduli adattivi headless nell’editor Forms adattivo di Forms as a Cloud Service SDK.
+I componenti core sono un set di componenti WCM (Web Content Management) standardizzati che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei moduli. Il componente Contenitore Forms è un componente core. Consente di incorporare ed eseguire il rendering di una struttura JSON di moduli adattivi headless nell’editor per Forms adattivo di Forms as a Cloud Service SDK.
 
 ### Specifiche di Adaptive Forms V2
 
@@ -74,7 +84,7 @@ La specifica dei moduli adattivi headless fornisce informazioni dettagliate su t
 
 ### API HTTP e JS
 
-[API HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) ti consentono di elencare, recuperare, convalidare, inviare e tenere traccia dello stato di invio dei moduli headless. [API JS](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) consente di utilizzare moduli adattivi headless con qualsiasi framework di interfaccia utente basato su JavaScript.
+[API HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) ti consentono di elencare, recuperare, convalidare, inviare e tenere traccia dello stato di invio dei moduli headless. <!-- URL is 404! [JS APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helps you use Headless adaptive forms with any JavaScript based UI framework. -->
 
 ### Estensione codice di Visual Studio
 

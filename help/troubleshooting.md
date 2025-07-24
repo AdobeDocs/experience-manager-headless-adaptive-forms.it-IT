@@ -9,30 +9,30 @@ role: Admin, Developer
 level: Beginner, Intermediate
 hide: false
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 5%
+source-wordcount: '127'
+ht-degree: 6%
 
 ---
 
-# Risoluzione dei problemi
+# Risoluzione di problemi
 
 ## Impossibile distribuire il progetto Archetipo nell’ambiente di sviluppo locale
 
 ### Problema  
 
-Se si utilizzano i comandi `mvn -PautoInstallPackage clean install` o simili per distribuire un progetto Archeype AEM, la distribuzione del progetto non riesce.
+Quando si utilizzano i comandi `mvn -PautoInstallPackage clean install` o simili per distribuire un progetto Archetipo AEM, la distribuzione del progetto non riesce.
 
 ### Motivo
 
-Ciò può verificarsi a causa di una versione non supportata o di un’installazione danneggiata di node.js o NPM.
+Il problema può essere dovuto a una versione non supportata o a un&#39;installazione danneggiata di `node.js` o `NPM`.
 
 ### Soluzione
 
 1. [rimuovi completamente le installazioni presenti di Node.JS](https://khushwantsehgal.wordpress.com/2022/06/28/how-to-remove-node-js-completely-from-windows-10/) dal tuo ambiente.
 
-1. Installa Node.JS 16.13.0 o versione successiva con NPM.
+1. Installa `node.JS 16.13.0` o versione successiva con `NPM`.
 
 1. Riavviare il computer.
 
@@ -41,7 +41,7 @@ Ciò può verificarsi a causa di una versione non supportata o di un’installaz
 
 ### Problema  
 
-Se si utilizzano i comandi `mvn clean install` o simili per distribuire un progetto Archeype AEM, l&#39;esecuzione del comando non riesce.
+Quando si utilizzano i comandi `mvn clean install` o simili per distribuire un progetto Archetipo AEM, l&#39;esecuzione del comando non riesce.
 
 ### Motivo
 
