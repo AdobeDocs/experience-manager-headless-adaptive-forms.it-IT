@@ -40,6 +40,7 @@ Per abilitare i moduli adattivi headless nella sandbox di Forms as a Cloud Servi
 <tr>
   <td>
   1. Accedere a <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> e selezionare l'opzione <b> Experience Manager </b>.
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -50,7 +51,7 @@ Per abilitare i moduli adattivi headless nella sandbox di Forms as a Cloud Servi
 </tr>
 <tr>
   <td>
-  2. Per l'opzione <b> Cloud Manager </b>, fare clic su <b> Launch. </b> Viene visualizzato un elenco di programmi per l'organizzazione.
+  &#x200B;2. Per l'opzione <b> Cloud Manager </b>, fare clic su <b> Launch. </b> Viene visualizzato un elenco di programmi per l'organizzazione.
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -61,7 +62,7 @@ Per abilitare i moduli adattivi headless nella sandbox di Forms as a Cloud Servi
 </tr>
 <tr>
   <td>
-    3. Per il programma, toccare l'icona ... e selezionare l'opzione <b> Modifica programma </b>. Viene visualizzata una finestra di dialogo. 
+    &#x200B;3. Per il programma, toccare l'icona ... e selezionare l'opzione <b> Modifica programma </b>. Viene visualizzata una finestra di dialogo. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -72,7 +73,7 @@ Per abilitare i moduli adattivi headless nella sandbox di Forms as a Cloud Servi
 </tr>
 <tr>
   <td>
-    4. Nella finestra di dialogo Modifica programma, passare alla scheda <b> soluzioni e componenti aggiuntivi </b>, selezionare l'opzione <b> Forms - Registrazione digitale </b> e toccare <b> aggiornamento </b>. 
+    &#x200B;4. Nella finestra di dialogo Modifica programma, passare alla scheda <b> soluzioni e componenti aggiuntivi </b>, selezionare l'opzione <b> Forms - Registrazione digitale </b> e toccare <b> aggiornamento </b>. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -98,6 +99,7 @@ Per clonare l’archivio:
 <tr>
   <td>
   1. Nella casella pipeline del programma, toccare <b> Accedi a dati archivio. </b> Viene visualizzata una finestra di dialogo con le informazioni dell'archivio 
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -108,7 +110,7 @@ Per clonare l’archivio:
 </tr>
 <tr>
   <td>
-  2. Toccare <b> per generare la password </b> e copiare l'URL dell'archivio <b>. </b> 
+  &#x200B;2. Toccare <b> per generare la password </b> e copiare l'URL dell'archivio <b>. </b> 
   </td>
   <td>
       <img alt="Programmi AEM as a Cloud Service" src="assets/repository-info.png">
@@ -117,7 +119,7 @@ Per clonare l’archivio:
 </tr>
 <tr>
   <td>
-    3. Nel computer locale aprire il prompt dei comandi, creare una cartella, eseguire il comando seguente e fornire le credenziali del repository, richiesto:
+    &#x200B;3. Nel computer locale aprire il prompt dei comandi, creare una cartella, eseguire il comando seguente e fornire le credenziali del repository, richiesto:
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     Ad esempio: </br> 
@@ -220,6 +222,7 @@ Al completamento del comando, viene creata una cartella di progetto con il nome 
 <tr>
   <td>
   1. Accedere a <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> e selezionare l'opzione <b> Experience Manager </b>.
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -230,7 +233,7 @@ Al completamento del comando, viene creata una cartella di progetto con il nome 
 </tr>
 <tr>
   <td>
-  2. Per l'opzione <b> Cloud Manager </b>, fare clic su <b> Launch. </b> Viene visualizzato un elenco di programmi per l'organizzazione. Apri il programma. 
+  &#x200B;2. Per l'opzione <b> Cloud Manager </b>, fare clic su <b> Launch. </b> Viene visualizzato un elenco di programmi per l'organizzazione. Apri il programma. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -241,7 +244,7 @@ Al completamento del comando, viene creata una cartella di progetto con il nome 
 </tr>
 <tr>
   <td>
-    3. Per la pipeline, toccare l'icona ... e selezionare l'opzione <b> Esegui </b>. Se viene richiesto di eseguire la pipeline, toccare <b> Esegui </b> e attendere che lo stato <b> della pipeline </b> cambi in <b> Completato </b>.  
+    &#x200B;3. Per la pipeline, toccare l'icona ... e selezionare l'opzione <b> Esegui </b>. Se viene richiesto di eseguire la pipeline, toccare <b> Esegui </b> e attendere che lo stato <b> della pipeline </b> cambi in <b> Completato </b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">

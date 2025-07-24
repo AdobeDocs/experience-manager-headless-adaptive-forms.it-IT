@@ -86,6 +86,7 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
 
    1. Apri <https://pipedream.com/requestbin> in una nuova scheda del browser.
    1. Fai clic su **Crea un bin pubblico** e copia l’URL dell’endpoint.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -93,23 +94,29 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
 1. Crea un modulo adattivo utilizzando l’interfaccia della procedura guidata:
 
    1. Nella scheda del browser utilizzata nella lezione 1, vai all’interfaccia web di AEM Forms as Cloud Service e passa a moduli e documenti.
+
       ![](/help/assets/screenshot2028114029.png)
 
    1. Fai clic su **Crea** > **Modulo adattivo**.
+
       ![](/help/assets/screenshot2028114629.png)
 
    1. Seleziona il modello **Vuoto con i componenti core** dalla schermata di selezione del modello come mostrato di seguito:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Fai clic sulla scheda **Stile** e seleziona il tema **wknd-theme** come mostrato di seguito:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
    1. Fai clic sulla scheda **Invio**, seleziona la scheda **Invia all&#39;endpoint REST** e specifica il contenitore pubblico nel **URL per il campo richiesta POST**, come illustrato di seguito:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Fai clic su **Crea**. Specificare un nome e un titolo nel modulo. Ad esempio, **registrazione**. Fai clic su **Crea**.
 
    1. Viene aperto l’editor di moduli adattivi. Chiudi eventuali pop-up o finestre di dialogo relativi a preferenze o informazioni. Fai clic sul browser Componenti nella barra a sinistra e aggiungi i componenti **Intestazione** e **Piè di pagina** rispettivamente all&#39;inizio e alla fine del modulo vuoto.
+
       ![](/help/assets/screenshot2028121929.png)
 
    1. Trascina i componenti dal browser Componenti per creare un modulo simile al seguente:
@@ -121,6 +128,7 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
    1. Fai clic sul componente **Numero di telefono** in modo da visualizzare il menu a comparsa. Fai clic sull’**icona a forma di chiave inglese** nel menu per configurare il campo.
 
    1. Apri la **scheda convalide**, contrassegna il campo come **Obbligatorio** e fai clic su **Fine**. Viene visualizzato il messaggio di operazione riuscita.
+
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -132,9 +140,11 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
    1. Compila il modulo con dati fittizi.
 
    1. Invia il modulo.
+
       ![](/help/assets/screenshot2028125729.png)
 
    1. Nella scheda Raccoglitore richieste, controlla i dati inviati.
+
       ![](/help/assets/screenshot2028125829.png)
 
 1. Aggiungi interattività al modulo con regole:

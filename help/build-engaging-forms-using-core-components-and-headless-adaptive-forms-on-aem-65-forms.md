@@ -86,9 +86,11 @@ In qualità di utente aziendale, utilizzerai l’editor di Forms adattivo e i re
 1. Crea un endpoint di invio per il modulo:
 
    1. Apri <https://pipedream.com/requestbin> in una nuova scheda del browser.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Fai clic su **Crea un bin pubblico** e copia l’URL dell’endpoint.
+
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Questo particolare endpoint funge da esempio per l’invio e la visualizzazione dei dati. Nella produzione effettiva, puoi utilizzare il tuo endpoint o le tue origini dati per memorizzare i dati acquisiti.
@@ -98,12 +100,15 @@ In qualità di utente aziendale, utilizzerai l’editor di Forms adattivo e i re
    1. Nella scheda del browser utilizzata nella lezione 1, passa all&#39;interfaccia Web di AEM Forms e passa a **Forms** > **Forms e documenti**.
 
    1. Fai clic su **Crea** e seleziona Modulo adattivo.
+
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. Seleziona il modello **Vuoto con Componenti core** dalla schermata di selezione del modello come mostrato di seguito e fai clic su **Avanti**.
+
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Specifica `Contact us` come **Titolo** del modulo. Assicurarsi che il **Nome** del modulo sia `contact-us`.
+
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Fai clic su **Crea**. Viene visualizzata una finestra di dialogo.
