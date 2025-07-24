@@ -22,7 +22,7 @@ Distribuendo il progetto basato su Archetipo 41 o versioni successive di AEM nel
 
 Prima di abilitare Headless Adaptive Forms nell’ambiente AEM 6.5 Forms,
 
-* [Eseguire l&#39;aggiornamento ad AEM 6.5 Forms Service Pack 16 (6.5.16.0) o versione successiva](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+* [Eseguire l&#39;aggiornamento ad AEM 6.5 Forms Service Pack 16 (6.5.16.0) o versione successiva](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 * Installa la versione più recente di [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -111,7 +111,7 @@ Per creare un progetto basato su Archetipo AEM 41 o [versione successiva](https:
 
    Una volta generato correttamente il progetto Archetipo AEM, viene generato un pacchetto AEM. Puoi trovare il pacchetto nella [cartella dei progetti Archetipo AEM]\all\target\[appid].all-[versione].zip
 
-1. Utilizza [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) per distribuire il pacchetto [Cartella di progetto Archetipo AEM]\all\target\[appid].all-[versione].zip in tutte le istanze di authoring e pubblicazione.
+1. Utilizza [Gestione pacchetti](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) per distribuire il pacchetto [Cartella di progetto Archetipo AEM]\all\target\[appid].all-[versione].zip in tutte le istanze di authoring e pubblicazione.
 
 >[!NOTE]
 >
