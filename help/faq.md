@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: modulo adattivo headless, domande frequenti
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 1%
+source-wordcount: '837'
+ht-degree: 0%
 
 ---
 
@@ -84,6 +84,29 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 ## Esiste un plug-in per semplificare lo sviluppo di Headless AF?
 
 Sì: un’estensione codice di Visual Studio consente di creare manualmente moduli adattivi headless in JSON.
+
+## Qual è l’approccio consigliato per i moduli mobili o offline? {#mobile-offline-forms}
+
+Crea una tua app nativa e recupera le definizioni dei moduli tramite l’API Forms adattivo headless. Facoltativamente, puoi implementare il supporto offline (ad esempio, archiviazione locale e sincronizzazione). Consulta [Best practice per i moduli mobili](mobile-forms-best-practices.md) per l&#39;approccio consigliato e i collegamenti alle API.
+
+## Come si utilizzano GraphQL o le API headless con AEM Forms?
+
+AEM Headless Adaptive Forms utilizza **API HTTP/REST**, non GraphQL. L’app richiama queste API per elencare i moduli, recuperare una definizione di modulo (JSON), convalidare, inviare e tenere traccia dello stato di invio. Utilizza le [API HTTP per moduli adattivi headless](https://opensource.adobe.com/aem-forms-af-runtime/api/) per il riferimento completo. Per informazioni sul recupero e il rendering dei moduli, consulta [Architettura](architecture.md) e [Informazioni sui moduli headless](understanding-headless-forms.md).
+
+## Come posso implementare e assegnare uno stile ai moduli headless utilizzando i componenti React in Adobe AEM Forms?
+
+Puoi implementare e assegnare uno stile ai moduli headless utilizzando componenti e CSS React personalizzati (o una libreria dell’interfaccia utente come l’interfaccia utente Materiale). La logica del modulo (stato, convalida e regole) proviene da Forms Web SDK e dal modulo JSON; l’app fornisce l’interfaccia utente che ne esegue il rendering.
+
+* Per assegnare uno stile a un modulo headless con una libreria dell&#39;interfaccia utente React, vedi [Utilizzare una libreria di react personalizzata per eseguire il rendering di un modulo headless](use-google-material-ui-react-components-to-render-a-headless-form.md).
+* Per generare e mappare i componenti React personalizzati ai campi modulo, vedi [Utilizzare componenti personalizzati per eseguire il rendering di un modulo headless](developing-for-headless-forms-using-your-own-components.md).
+
+Per concetti quali l&#39;utilizzo di moduli headless, la gestione dello stato e la convalida, vedi [Informazioni sui moduli headless](understanding-headless-forms.md).
+
+## Come posso implementare e personalizzare AEM Forms con CSS, temi, editor di regole e moduli headless personalizzati?
+
+**Moduli headless:** Lo stile e il look-and-feel sono completamente sotto il tuo controllo. Puoi utilizzare i tuoi componenti React (o altri) e il tuo CSS; non sono presenti temi incorporati. Consulta [Utilizzare una libreria di react personalizzata per eseguire il rendering di un modulo headless](use-google-material-ui-react-components-to-render-a-headless-form.md) e [Utilizzare componenti personalizzati per eseguire il rendering di un modulo headless](developing-for-headless-forms-using-your-own-components.md) per implementare e formattare i moduli headless.
+
+**AEM Forms classico (temi, editor di regole, editor visivo):** CSS personalizzato, editor di temi e editor di regole si applicano all&#39;esperienza di authoring di Forms adattivo classico (non headless). Per questi argomenti, consulta la [documentazione di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-forms.html) su Experience League.
 
 ## Un modulo adattivo headless può connettersi a qualsiasi sistema CRM per leggere o scrivere dati?
 

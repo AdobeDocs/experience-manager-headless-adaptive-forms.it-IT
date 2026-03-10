@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: CMS headless, moduli adattivi, interfaccia utente headless, CMS headful, assistenti vocali, alexa, chatbot, architettura WhatsApp
 hide: false
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,9 @@ I moduli adattivi headless consentono di effettuare le seguenti operazioni:
 * Creare moduli multicanale di alta qualità nel linguaggio di programmazione desiderato.
 * Integra moduli in modo nativo nelle app desktop e mobili, nei siti Web e nelle applicazioni di chat.
 * Riutilizzare i componenti dell’interfaccia utente proprietari con le applicazioni Forms.
-* Sfrutta la potenza [&#x200B; di Adobe Experience Manager Forms](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Sfrutta la potenza [ di Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+
+Per i casi di utilizzo di moduli per dispositivi mobili e offline, l’approccio consigliato è quello di creare un’app nativa e recuperare le definizioni dei moduli tramite l’API Forms adattiva headless. Per informazioni dettagliate, consulta le [best practice per i moduli mobili](mobile-forms-best-practices.md).
 
 Inoltre, puoi sviluppare i tuoi componenti per eseguire il rendering di un modulo utilizzando qualsiasi framework di interfaccia utente e linguaggio di programmazione a tua scelta. Puoi anche utilizzare i componenti React disponibili come predefiniti per il rendering di un modulo adattivo headless.
 

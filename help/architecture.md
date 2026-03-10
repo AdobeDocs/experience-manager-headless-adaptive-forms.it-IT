@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: headless, modulo adattivo, architettura
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **Moduli adattivi headless**: un modulo adattivo headless è rappresentato come file .json. La struttura JSON definisce i componenti, i vincoli e la struttura di un modulo.
 
-**App front-end**: applicazioni front-end come, SPA (applicazioni a pagina singola), app mobili, app JavaScript, utilizzano moduli adattivi headless (rappresentazione modulo JSON) ed eseguono il rendering del modulo su un client. Puoi utilizzare il componente renderer React fornito con moduli adattivi headless per eseguire il rendering di un modulo adattivo o per creare un componente personalizzato per il rendering nativo dei moduli adattivi headless.
+**App front-end**: applicazioni front-end come, SPA (applicazioni a pagina singola), app mobili, app JavaScript, utilizzano moduli adattivi headless (rappresentazione modulo JSON) ed eseguono il rendering del modulo su un client. Puoi utilizzare il componente renderer React fornito con moduli adattivi headless per eseguire il rendering di un modulo adattivo o creare un componente personalizzato per il rendering nativo dei moduli adattivi headless. Per i casi di utilizzo di moduli nativi per dispositivi mobili e offline, l&#39;approccio consigliato consiste nel generare la tua app e recuperare le definizioni dei moduli tramite l&#39;API; consulta [Best practice per i moduli mobili](mobile-forms-best-practices.md).
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -76,7 +76,7 @@ Oltre a fornire le API per convalidare i vincoli applicati ai vari campi di un m
 
 Tutti questi componenti sono inclusi in Archetipo AEM. Quando crei un progetto AEM Archetype 37 o successivo per moduli adattivi headless, nel progetto viene inclusa la versione più recente delle librerie elencate sopra.
 
-* **Area di gioco codice**: [Area di gioco codice](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=it) è un ambiente interattivo progettato per gli sviluppatori per sperimentare, scoprire e testare le funzionalità di Forms adattivo headless.
+* **Area di gioco codice**: [Area di gioco codice](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) è un ambiente interattivo progettato per gli sviluppatori per sperimentare, scoprire e testare le funzionalità di Forms adattivo headless.
 
 **Applicazione avviata**: Adobe ha anche rilasciato un&#39;applicazione avviata per aiutarti a iniziare rapidamente con i moduli adattivi headless.
 
