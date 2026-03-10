@@ -222,5 +222,5 @@ Per gli scenari mobili e offline, l&#39;approccio consigliato è quello di [crea
 * [Domande frequenti](faq.md)
 * [Creare e pubblicare un modulo headless](create-and-publish-a-headless-form.md)
 * [API per moduli adattivi headless](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [Playground del codice](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+* [Playground del codice](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=it)
 * [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)
