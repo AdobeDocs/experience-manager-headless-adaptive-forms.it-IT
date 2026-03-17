@@ -6,12 +6,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 0%
+source-wordcount: '1037'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ Per creare ed eseguire un&#39;app React, è necessario che nel computer sia inst
 
 * Installa la [versione più recente di Git](https://git-scm.com/downloads). Se sei un nuovo utente di Git, vedi [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Installa [Node.js 16.13.0 o versione successiva](https://nodejs.org/it/download/). <!-- URL is 404!! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
+* Installa [Node.js 16.13.0 o versione successiva](https://nodejs.org/en/download/). <!-- URL is 404!! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
 
 ## Introduzione
 
@@ -52,7 +52,7 @@ Una volta soddisfatti i requisiti, eseguire i passaggi seguenti per iniziare:
 
 
 
-## &#x200B;1. Configurare il kit di avvio per moduli adattivi headless {#install}
+## &#x200B;1.  Configurare il kit di avvio per moduli adattivi headless {#install}
 
 Il kit di avvio è un’app React con un modulo adattivo headless di esempio e le librerie corrispondenti. Utilizza il kit per sviluppare e testare i moduli headless adattivi e i corrispondenti componenti React. Esegui i seguenti comandi per configurare il kit di avvio per moduli adattivi headless:
 
@@ -97,9 +97,11 @@ Dopo aver configurato il kit di avvio, puoi visualizzare in anteprima il modulo 
 
    ![](/help/assets/rename-env-file.png)
 
-   <!-- The options in the .env file help you configure source of the forms definantion (.JSON):
+   <!-- 
+    The options in the .env file help you configure source of the forms definantion (.JSON):
     *  To source forms definantion (.JSON) from an AEM Server, set USE_LOCAL_JSON option to false, use the AEM_URL option to specify URL  of your AEM Server, and set the AEM_FORM_PATH option to path of your adaptive form.
-    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. -->
+    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. 
+    -->
 
 1. Utilizza il seguente comando per eseguire l’app:
 
@@ -206,7 +208,7 @@ Imposta il titolo della pagina Web che ospita il modulo su `Contact Us | WKND Ad
 
 ## Passaggio successivo
 
-Per impostazione predefinita, il kit di avvio utilizza i componenti Spectrum[&#x200B; di &#x200B;](https://spectrum.adobe.com/)Adobe per eseguire il rendering del modulo. Puoi creare e utilizzare componenti personalizzati o di terze parti. Ad esempio, utilizzando l’interfaccia utente Materiale di Google o l’interfaccia utente Chakra.
+Per impostazione predefinita, il kit di avvio utilizza i componenti Spectrum](https://spectrum.adobe.com/) di [Adobe per eseguire il rendering del modulo. Puoi creare e utilizzare componenti personalizzati o di terze parti. Ad esempio, utilizzando l’interfaccia utente Materiale di Google o l’interfaccia utente Chakra.
 
 [utilizziamo l&#39;interfaccia utente di Google Material](use-google-material-ui-react-components-to-render-a-headless-form.md) per eseguire il rendering del modulo `Contact Us`.
 

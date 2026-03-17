@@ -7,12 +7,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 6%
+source-wordcount: '152'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 ## Impossibile distribuire il progetto Archetipo nell’ambiente di sviluppo locale
 
-### Problema  
+### Problema
 
 Quando si utilizzano i comandi `mvn -PautoInstallPackage clean install` o simili per distribuire un progetto Archetipo AEM, la distribuzione del progetto non riesce.
 
@@ -39,7 +39,7 @@ Il problema può essere dovuto a una versione non supportata o a un&#39;installa
 
 ## Esecuzione del comando `mvn clean install` non riuscita
 
-### Problema  
+### Problema
 
 Quando si utilizzano i comandi `mvn clean install` o simili per distribuire un progetto Archetipo AEM, l&#39;esecuzione del comando non riesce.
 

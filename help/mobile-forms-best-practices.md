@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: moduli mobili, app nativa, moduli offline, API headless
-hide: false
-exl-id: b8e2f1a4-5c6d-4e2a-9f3b-1d4e5a6c7b8d
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+exl-id: 6f25039f-61fc-4366-9e17-6b2809162c58
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -38,4 +38,4 @@ Questo approccio mantiene la gestibilità dell’app con il cambiamento di Andro
 * [API per moduli adattivi headless](https://opensource.adobe.com/aem-forms-af-runtime/api/): elenca, recupera, convalida e invia moduli a livello di programmazione.
 * [Architettura](architecture.md) - Funzionamento dei moduli adattivi headless e utilizzo delle app front-end.
 
-Per un&#39;integrazione dettagliata, vedere [Creare e pubblicare un modulo headless](create-and-publish-a-headless-form.md) e il [portale per sviluppatori](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=it).
+Per un&#39;integrazione dettagliata, vedere [Creare e pubblicare un modulo headless](create-and-publish-a-headless-form.md) e il [portale per sviluppatori](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en).

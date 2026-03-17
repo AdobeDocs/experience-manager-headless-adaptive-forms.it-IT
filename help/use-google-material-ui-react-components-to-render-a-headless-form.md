@@ -6,11 +6,11 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ La parte `state.visible` controlla se il componente è impostato per essere visi
 
 Il componente personalizzato `materialtextfield` è pronto. Impostiamo questo componente personalizzato in modo da sostituire tutte le istanze di [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) con il campo di testo dell&#39;interfaccia utente di Google Material.
 
-## &#x200B;3. Mappatura del componente personalizzato con campi modulo headless
+## &#x200B;3. Mappa il componente personalizzato con campi modulo headless
 
 Il processo di utilizzo di componenti libreria di terze parti per il rendering dei campi modulo è noto come mappatura. Mappa ogni ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)) a un componente corrispondente di una libreria di terze parti.
 

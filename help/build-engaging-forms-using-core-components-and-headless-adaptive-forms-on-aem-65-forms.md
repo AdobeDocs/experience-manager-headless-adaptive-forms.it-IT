@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 40%
+source-wordcount: '2311'
+ht-degree: 41%
 
 ---
 
@@ -38,7 +38,7 @@ Per utilizzare questo laboratorio pratico:
 
 * Installa la [versione più recente di Git](https://git-scm.com/downloads). Se sei un nuovo utente di Git, vedi [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Installa [Node.js 16.13.0 o versione successiva](https://nodejs.org/it/download/). <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).-->
+* Installa [Node.js 16.13.0 o versione successiva](https://nodejs.org/en/download/). <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).-->
 
 * [Abilita Forms adattivo headless](enable-headless-adaptive-forms-and-core-components.md) nell&#39;ambiente AEM 6.5 Forms.
 
@@ -86,11 +86,9 @@ In qualità di utente aziendale, utilizzerai l’editor di Forms adattivo e i re
 1. Crea un endpoint di invio per il modulo:
 
    1. Apri <https://pipedream.com/requestbin> in una nuova scheda del browser.
-
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Fai clic su **Crea un bin pubblico** e copia l’URL dell’endpoint.
-
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Questo particolare endpoint funge da esempio per l’invio e la visualizzazione dei dati. Nella produzione effettiva, puoi utilizzare il tuo endpoint o le tue origini dati per memorizzare i dati acquisiti.
@@ -100,20 +98,17 @@ In qualità di utente aziendale, utilizzerai l’editor di Forms adattivo e i re
    1. Nella scheda del browser utilizzata nella lezione 1, passa all&#39;interfaccia Web di AEM Forms e passa a **Forms** > **Forms e documenti**.
 
    1. Fai clic su **Crea** e seleziona Modulo adattivo.
-
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. Seleziona il modello **Vuoto con Componenti core** dalla schermata di selezione del modello come mostrato di seguito e fai clic su **Avanti**.
-
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Specifica `Contact us` come **Titolo** del modulo. Assicurarsi che il **Nome** del modulo sia `contact-us`.
-
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Fai clic su **Crea**. Viene visualizzata una finestra di dialogo.
 
-   1. Nella finestra di dialogo, fai clic su **Modifica**. Il modulo viene aperto nell’editor di moduli adattivi. Ignorare eventuali finestre a comparsa o finestre di dialogo per informazioni o preferenze.
+   1. Nella finestra di dialogo, fai clic su **Modifica**. Il modulo viene aperto nell’editor di moduli adattivi. Chiudi eventuali pop-up o finestre di dialogo relativi a preferenze o informazioni.
 
    1. Apri il browser Componenti e trascina il componente Pannello al centro dello schermo.
 
@@ -195,7 +190,7 @@ Imposta un archivio locale del tema:
 
    * **AEM_URL**: specificare l&#39;URL di un&#39;istanza **publish**. Ad esempio `https://localhost:4502/`
 
-   * **AEM_ADAPTIVE_FORM**: specificare il nome del modulo. Esempio: `contact-us`.
+   * **AEM_ADAPTIVE_FORM**: specificare il nome del modulo. Ad esempio, `contact-us`.
 
    </br>
 
@@ -345,7 +340,7 @@ Apporta le modifiche al modulo sul server come utente aziendale e visualizza le 
 
 1. Apri l’interfaccia di gestione di AEM Forms nel browser. Ad esempio, [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 
-1. Selezionare il modulo **Contattaci** e fare clic su **Modifica.** apre il modulo nell&#39;editor di Forms adattivo.
+1. Seleziona il modulo **Contattaci** e fai clic su **Modifica.** Il modulo viene aperto nell’editor di Forms adattivo.
 
 
 1. Selezionare il campo **Contatto** e fare clic sull&#39;icona **Modifica (icona a forma di matita)** nella barra degli strumenti. Se non è possibile visualizzare la barra degli strumenti popup, passare alla modalità Modifica. Fai clic sul pulsante **Modifica** in alto a destra, a sinistra del pulsante **Anteprima**.
@@ -455,7 +450,7 @@ Per eseguire il rendering del modulo in hosting nell’ambiente di pubblicazione
 
    ![](/help/assets/lab65-mui-starter-kit-start.png)
 
-   Il comando avvia un server di sviluppo locale ed esegue il rendering della definizione del modulo recuperata da AEM in modo headless utilizzando la libreria front-end dell’interfaccia utente dei materiali Google.
+   Il comando avvia un server di sviluppo locale che esegue il rendering della definizione del modulo recuperata da AEM in modo headless utilizzando la libreria front-end dell’interfaccia utente Google Material.
 
    >[!NOTE]
    >
@@ -513,13 +508,13 @@ Aggiorna la variante dei componenti nel progetto headless. Per modificare la var
 
 ## Domande frequenti (FAQ)
 
-+++ I Componenti core sono disponibili al pubblico?
++++ I Componenti core sono disponibili al pubblico?  
 
 Sì, i componenti core Adaptive Forms sono disponibili con AEM 6.5 Forms e Forms as Cloud Service. Per utilizzare i componenti core Adaptive Forms è necessario AEM Forms 6.5 Service Pack 16 o versione successiva.
 
 +++
 
-+++ I moduli headless richiedono una licenza separata?
++++ I moduli headless richiedono una licenza separata?  
 
 No, i moduli headless utilizzano la stessa metrica del valore di licenza, numero di invii dei moduli.
 
@@ -532,14 +527,14 @@ No, i moduli headless utilizzano la stessa metrica del valore di licenza, numero
 
 Ora sai come creare moduli adattivi e distribuirli tra i canali con moduli headless. Utilizza queste competenze per creare esperienze di acquisizione dati scalabili e di alta qualità ovunque si trovino gli utenti.
 
-## Riferimenti
+## Risorse
 
-* [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Aggiornare lo stile per moduli adattivi basati su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
+* [Aggiornare lo stile per AF basato su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Forms adattivo headless](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Forms adattivo headless](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Utilizzo di un kit di avvio per la reazione headless](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Utilizzo di un kit di avvio Headless React](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

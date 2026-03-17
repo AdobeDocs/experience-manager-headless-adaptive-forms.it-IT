@@ -3,9 +3,9 @@ title: Panoramica di AEM Headless Adaptive Forms
 description: Panoramica dei moduli adattivi headless di AEM.
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '513'
 ht-degree: 4%
 
 ---
@@ -47,6 +47,7 @@ I moduli adattivi headless ricevono miglioramenti su base continuativa. Per rima
 
 * The service was executing some event handlers twice. The issue is fixed.
 * Fixing Data Generation with different values of dataRef, name and type.
+-->
 
 <!-- ### React Renderer component -->
 
@@ -80,7 +81,7 @@ I componenti core sono un set di componenti WCM (Web Content Management) standar
 
 ### Specifiche di Adaptive Forms V2
 
-La specifica dei moduli adattivi headless fornisce informazioni dettagliate su tutti i componenti, i vincoli e i metodi disponibili per definire i moduli adattivi headless. La specifica è disponibile in formato [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
+La specifica dei moduli adattivi headless fornisce informazioni dettagliate su tutti i componenti, i vincoli e i metodi disponibili per definire i moduli adattivi headless. La specifica è disponibile in formato [PDF](/help/assets/headless-adaptive-forms-specification.pdf).
 
 ### API HTTP e JS
 
@@ -90,7 +91,8 @@ La specifica dei moduli adattivi headless fornisce informazioni dettagliate su t
 
 [Estensione del codice Visual Studio](visual-studio-code-extension-for-headless-adaptive-forms.md) per creare una struttura JSON valida. Fornisce il supporto IntelliSense e la convalida per la struttura JSON dei moduli insieme a funzioni comuni come l’aggiunta, l’eliminazione o la ridenominazione di componenti di una struttura JSON.
 
-<!-- ## What's next
+<!-- 
+## What's next
 
 The following features would be available in upcoming releases:
 

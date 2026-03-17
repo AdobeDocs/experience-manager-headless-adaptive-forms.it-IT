@@ -11,10 +11,10 @@ docset: CloudService
 hide: true
 hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 2%
+source-wordcount: '943'
+ht-degree: 6%
 
 ---
 
@@ -65,7 +65,7 @@ Per abilitare Headless Adaptive Forms per un ambiente AEM Forms as a Cloud Servi
    Quando richiesto, immettere le credenziali. L&#39;archivio viene clonato nel computer locale.
 
 
-## &#x200B;2. Aggiungere all’archivio Git le dipendenze dei Componenti core adattivi di Forms {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Aggiungere le dipendenze dei componenti core di Forms adattivi all’archivio Git {#add-adaptive-forms-core-components-dependencies}
 
 1. Apri la cartella dell’archivio Git in un editor di codice di testo normale. Ad esempio, Codice VS.
 1. Apri il file `[AEM Repository Folder]\pom.xml` per la modifica.
@@ -282,7 +282,7 @@ Per abilitare Headless Adaptive Forms per un ambiente AEM Forms as a Cloud Servi
 
 1. Salva e chiudi il file.
 
-## &#x200B;3. Aggiorna il progetto per includere la versione più recente dei Componenti core di Forms:
+## &#x200B;3.  Aggiorna il progetto per includere la versione più recente dei Componenti core di Forms:
 
 1. Apri la [cartella dei progetti Archetipo AEM]/pom.xml per la modifica.
 
@@ -303,7 +303,7 @@ Per abilitare Headless Adaptive Forms per un ambiente AEM Forms as a Cloud Servi
       git push origin
       ```
 
-1. Dopo il commit dei file nell&#39;archivio Git, [Esegui la pipeline](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. Dopo il commit dei file nell&#39;archivio Git, [Esegui la pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    Una volta eseguita correttamente la pipeline, i componenti core Adaptive Forms vengono abilitati per l’ambiente corrispondente. Inoltre, all’ambiente Forms as a Cloud Service vengono aggiunti un modello Forms adattivo (Componenti core) e un tema Canvas 3.0, che offrono opzioni per personalizzare e creare componenti core basati su Adaptive Forms.
 

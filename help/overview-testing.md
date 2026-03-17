@@ -10,10 +10,10 @@ keywords: CMS headless, moduli adattivi, interfaccia utente headless, CMS headfu
 hide: true
 hidefromtoc: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 3%
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ I moduli adattivi headless consentono di effettuare le seguenti operazioni:
 * Creare moduli multicanale di alta qualità nel linguaggio di programmazione desiderato.
 * Integra moduli in modo nativo nelle app desktop e mobili, nei siti Web e nelle applicazioni di chat.
 * Riutilizzare i componenti dell’interfaccia utente proprietari con le applicazioni Forms.
-* Utilizzo della potenza [&#x200B; di Adobe Experience Manager Forms](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Utilizzo della potenza [ di Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 Inoltre, puoi sviluppare i tuoi componenti per eseguire il rendering di un modulo utilizzando qualsiasi framework di interfaccia utente e linguaggio di programmazione a tua scelta. Puoi anche utilizzare i componenti React disponibili come predefiniti per il rendering di un modulo adattivo headless.
 
@@ -154,32 +154,31 @@ Inoltre, puoi sviluppare i tuoi componenti per eseguire il rendering di un modul
         <h2 style="margin-top: 10px;">Heading 3</h2>
         <p>Description 3</p>
     </div>
-    <!-- Add more cards as needed -->
-</div>
+    </div>
 
 
 
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px;">
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="Immagine 1" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">Intestazione 1</h2>
-        <p>Descrizione 1</p>
+        <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="Image 1" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 1</h2>
+        <p>Description 1</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/02-overview-backend-systems.jpeg" alt="Immagine 2" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">Intestazione 2</h2>
-        <p>Descrizione 2</p>
+        <img src="/help/assets/02-overview-backend-systems.jpeg" alt="Image 2" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 2</h2>
+        <p>Description 2</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="Immagine 3" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">Intestazione 3</h2>
-        <p>Descrizione 3</p>
+        <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="Image 3" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 3</h2>
+        <p>Description 3</p>
     </div>
-    <!-- Add more cards as needed -->
 </div>
 
 -->
+<!-- Add more cards as needed -->
 
 ## Chi può utilizzare moduli adattivi headless? {#who-can-use-headless-adaptive-forms}
 

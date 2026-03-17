@@ -3,13 +3,13 @@ title: Utilizzare gli eventi per gestire e inviare i dati dei moduli adattivi he
 description: Utilizza gli eventi per gestire e inviare i dati dei moduli adattivi headless.
 hide: true
 hidefromtoc: true
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+exl-id: f80a0d44-fa76-4df7-883e-3f5d0384a2a5
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
 
 ---
-
 
 # Utilizzare gli eventi per gestire e inviare i dati dei moduli adattivi headless {#using-events}
 

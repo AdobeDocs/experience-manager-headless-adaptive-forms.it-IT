@@ -4,10 +4,10 @@ description: Crea il tuo primo modulo adattivo headless.
 keywords: modulo adattivo headless
 hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 3%
+source-wordcount: '1619'
+ht-degree: 5%
 
 ---
 
@@ -27,9 +27,9 @@ I moduli adattivi headless di Adobe Experience Manager offrono a tali organizzaz
 
 * Configura l&#39;[ambiente di sviluppo](setup-development-environment.md) per consentirti di creare e testare un modulo adattivo headless nel computer locale.
 * Il seguente software deve essere installato sul computer di sviluppo locale:
-   * [Java Development Kit 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=tipo di software%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
+   * [Java Development Kit 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
    * [Ultima versione di Git](https://git-scm.com/downloads). Se sei un nuovo utente di Git, vedi [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-   * [Node.js 16.13.0 o versione successiva](https://nodejs.org/it/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
+   * [Node.js 16.13.0 o versione successiva](https://nodejs.org/en/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
    * [Maven 3.6 o versione successiva](https://maven.apache.org/download.cgi). Se hai poca esperienza con Maven, consulta [Installazione di Apache Maven](https://maven.apache.org/install.html).
 
 
@@ -45,7 +45,7 @@ Per creare ed eseguire il rendering del primo modulo adattivo headless, effettua
 1. [Creare un modulo adattivo basato sul modello vuoto con componenti core](#create-adaptive-form-with-blank-with-core-components-template)
 
 
-### &#x200B;1. Creazione e distribuzione di un progetto basato su Archetipo AEM {#create-an-archetype-based-project}
+### &#x200B;1. Creare e distribuire un progetto basato su Archetipo AEM {#create-an-archetype-based-project}
 
 A seconda del sistema operativo, esegui il comando seguente per creare un progetto Experience Manager Forms as a Cloud Service. Utilizza la versione 37 o successiva di Archetipo. Per trovare la versione più recente di Archetipo, consulta la [documentazione di Archetipo](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview).
 
@@ -105,7 +105,7 @@ Al completamento del comando, viene creata una cartella di progetto con il nome 
 
 ### &#x200B;2. Distribuire il progetto in AEM SDK {#deploy-the-project-to-a-local-development-environment}
 
-Quando distribuisci il progetto nell&#39;istanza di AEM SDK, vengono aggiunte all&#39;ambiente di sviluppo la funzionalità Headless Adaptive Forms, il modello **Blank with core components** e altre risorse incluse nel progetto. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> Per eseguire la distribuzione nell&#39;istanza SDK di AEM:
+Quando distribuisci il progetto nell&#39;istanza di AEM SDK, vengono aggiunte all&#39;ambiente di sviluppo la funzionalità Headless Adaptive Forms, il modello **Blank with core components** e altre risorse incluse nel progetto. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> Per implementare nell’istanza di AEM SDK:
 
 1. Apri il prompt dei comandi. Se ti trovi in Windows, apri il prompt dei comandi con privilegi di amministratore (esegui il prompt dei comandi o [Git bash shell](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/) come amministratore).
 
@@ -125,12 +125,12 @@ Quando distribuisci il progetto nell&#39;istanza di AEM SDK, vengono aggiunte al
    La risoluzione delle dipendenze e la distribuzione del progetto possono richiedere molto tempo. In caso di errore durante la distribuzione del progetto, vedere l&#39;articolo [risoluzione dei problemi](troubleshooting.md) per informazioni sui problemi comuni e sulla loro risoluzione.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
 
 ### &#x200B;3. Crea uno schema JSON per un modulo adattivo headless e caricalo nell’istanza SDK di AEM {#create-add-json-representation-of-headless-adaptive-forms}
 
-Un Forms adattivo headless è rappresentato come file JSON. Puoi ottenere un modulo di esempio da [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) oppure utilizzare il modulo di esempio include nel progetto di archetipo in `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`. Questo documento utilizza il modulo [introduction](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) di Storybook. Si tratta di un modulo a campo singolo che consente di iniziare rapidamente a utilizzare Forms adattivo headless. <!-- The [specifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
+Un Forms adattivo headless è rappresentato come file JSON. Puoi ottenere un modulo di esempio da [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) oppure utilizzare il modulo di esempio include nel progetto di archetipo in `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`. Questo documento utilizza il modulo [introduction](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) di Storybook. Si tratta di un modulo a campo singolo che consente di iniziare rapidamente a utilizzare Forms adattivo headless. <!-- The [specifications](/help/assets/headless-adaptive-forms-specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
 
 Per creare e caricare lo schema:
 
@@ -166,11 +166,12 @@ Per creare e caricare lo schema:
 
 In caso di errore durante il caricamento di `.json`, verificare che il progetto [Archetipo AEM sia stato distribuito correttamente](#deploy-the-project-to-a-local-development-environment).
 
-<!-- 1. Open the [contact form](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) and tap the [![Raw](assets/raw.png)](faq.md#storybook-example) icon on bottom-right side of the Storybook page to view the source code of the headless . 
+<!--
+1. Open the [contact form](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) and tap the [![Raw](assets/raw.png)](faq.md#storybook-example) icon on bottom-right side of the Storybook page to view the source code of the headless . 
 
 You can use [Adaptive Forms builder extension for Visual Studio Code](/help/setup-development-environment.md#microsot-visual-studio-code-extension-for-headless-adaptive-forms) to build a JSON schema of your Headless Adaptive Forms. 
 
-You can see [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) for sample JSON schemas and list of components, attributes, and properties. You can also see the [specifications document](/help/assets/Headless-Adaptive-Form-Specification.pdf) for detailed information on all the components, constraints, and methods available to define Headless Adaptive Forms.
+You can see [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) for sample JSON schemas and list of components, attributes, and properties. You can also see the [specifications document](/help/assets/headless-adaptive-forms-specification.pdf) for detailed information on all the components, constraints, and methods available to define Headless Adaptive Forms.
 
 File extension of a JSON schema of Headless Adaptive Forms is .json. For example, formname.json. Create or add the file to your AEM Archetype based project. For example, `\myheadlessform\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\home-loan.json` -> 
 
@@ -180,9 +181,10 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it#building-and-installing).
-    
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it#coding-against-the-right-aem-version) article : -->
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
+-->
+
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
 ### &#x200B;4. Creare un modulo adattivo basato sul modello vuoto con componenti core {#create-adaptive-form-with-blank-with-core-components-template}
 
@@ -228,4 +230,4 @@ Il modulo adattivo creato nel passaggio precedente è vuoto. Configura il modulo
    1. Al termine, apri localhost:3000 nella finestra del browser per visualizzare un modulo adattivo headless renderizzato.
    1. Per verificare la funzionalità di invio, accedere al server AEM Forms e utilizzare l&#39;opzione **Anteprima modulo in HTML** per aprire il modulo in modalità anteprima.
 
-[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fornisce un elenco di componenti e regole che possono essere impostati su vari Forms headless adattivi, insieme ad alcuni esempi dello schema JSON di Headless Adaptive Forms. Puoi inoltre consultare il documento [specifiche](/help/assets/Headless-Adaptive-Form-Specification.pdf) per scoprire varie regole e proprietà relative a Headless Adaptive Forms.
+[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fornisce un elenco di componenti e regole che possono essere impostati su vari Forms headless adattivi, insieme ad alcuni esempi dello schema JSON di Headless Adaptive Forms. Puoi inoltre consultare il documento [specifiche](/help/assets/headless-adaptive-forms-specification.pdf) per scoprire varie regole e proprietà relative a Headless Adaptive Forms.
