@@ -38,4 +38,4 @@ Questo approccio mantiene la gestibilità dell’app con il cambiamento di Andro
 * [API per moduli adattivi headless](https://opensource.adobe.com/aem-forms-af-runtime/api/): elenca, recupera, convalida e invia moduli a livello di programmazione.
 * [Architettura](architecture.md) - Funzionamento dei moduli adattivi headless e utilizzo delle app front-end.
 
-Per un&#39;integrazione dettagliata, vedere [Creare e pubblicare un modulo headless](create-and-publish-a-headless-form.md) e il [portale per sviluppatori](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en).
+Per un&#39;integrazione dettagliata, vedere [Creare e pubblicare un modulo headless](create-and-publish-a-headless-form.md) e il [portale per sviluppatori](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=it).

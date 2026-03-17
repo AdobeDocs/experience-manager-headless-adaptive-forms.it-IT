@@ -27,7 +27,7 @@ I moduli adattivi headless consentono di effettuare le seguenti operazioni:
 * Creare moduli multicanale di alta qualità nel linguaggio di programmazione desiderato.
 * Integra moduli in modo nativo nelle app desktop e mobili, nei siti Web e nelle applicazioni di chat.
 * Riutilizzare i componenti dell’interfaccia utente proprietari con le applicazioni Forms.
-* Sfrutta la potenza [&#x200B; di Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Sfrutta la potenza [&#x200B; di Adobe Experience Manager Forms](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 Per i casi di utilizzo di moduli per dispositivi mobili e offline, l’approccio consigliato è quello di creare un’app nativa e recuperare le definizioni dei moduli tramite l’API Forms adattiva headless. Per informazioni dettagliate, consulta le [best practice per i moduli mobili](mobile-forms-best-practices.md).
 
