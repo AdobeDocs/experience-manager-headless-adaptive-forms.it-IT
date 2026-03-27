@@ -7,8 +7,8 @@ topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '2452'
-ht-degree: 56%
+source-wordcount: '2629'
+ht-degree: 55%
 
 ---
 
@@ -36,7 +36,7 @@ Per utilizzare questo laboratorio pratico:
 
 * Installa la [versione più recente di Git](https://git-scm.com/downloads). Se sei un nuovo utente di Git, vedi [Installazione di Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Installa [Node.js 16.13.0 o versione successiva](https://nodejs.org/it/download/). Se hai poca esperienza con Node.js, consulta [Come installare Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
+* Installa [Node.js 16.13.0 o versione successiva](https://nodejs.org/en/download/). Se hai poca esperienza con Node.js, consulta [Come installare Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
 * [Abilita i componenti core adattivi di Forms](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) per il tuo ambiente AEM Forms as a Cloud Service.
 
@@ -67,7 +67,7 @@ In questa lezione imparerai a conoscere l’ambiente di AEM Forms as a Cloud Ser
 
    ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
 
-   Ignora eventuali popup relativi a preferenze o informazioni. Vengono visualizzati tutti i moduli disponibili.
+   Ignora eventuali messaggi a comparsa relativi a preferenze o informazioni. Vengono visualizzati tutti i moduli disponibili.
 
 
 ## Lezione 2
@@ -86,7 +86,6 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
 
    1. Apri <https://pipedream.com/requestbin> in una nuova scheda del browser.
    1. Fai clic su **Crea un bin pubblico** e copia l’URL dell’endpoint.
-
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -94,29 +93,23 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
 1. Crea un modulo adattivo utilizzando l’interfaccia della procedura guidata:
 
    1. Nella scheda del browser utilizzata nella lezione 1, vai all’interfaccia web di AEM Forms as Cloud Service e passa a moduli e documenti.
-
       ![](/help/assets/screenshot2028114029.png)
 
    1. Fai clic su **Crea** > **Modulo adattivo**.
-
       ![](/help/assets/screenshot2028114629.png)
 
    1. Seleziona il modello **Vuoto con i componenti core** dalla schermata di selezione del modello come mostrato di seguito:
-
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Fai clic sulla scheda **Stile** e seleziona il tema **wknd-theme** come mostrato di seguito:
-
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
    1. Fai clic sulla scheda **Invio**, seleziona la scheda **Invia all&#39;endpoint REST** e specifica il contenitore pubblico nel **URL per il campo richiesta POST**, come illustrato di seguito:
-
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Fai clic su **Crea**. Specificare un nome e un titolo nel modulo. Ad esempio, **registrazione**. Fai clic su **Crea**.
 
    1. Viene aperto l’editor di moduli adattivi. Chiudi eventuali pop-up o finestre di dialogo relativi a preferenze o informazioni. Fai clic sul browser Componenti nella barra a sinistra e aggiungi i componenti **Intestazione** e **Piè di pagina** rispettivamente all&#39;inizio e alla fine del modulo vuoto.
-
       ![](/help/assets/screenshot2028121929.png)
 
    1. Trascina i componenti dal browser Componenti per creare un modulo simile al seguente:
@@ -128,7 +121,6 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
    1. Fai clic sul componente **Numero di telefono** in modo da visualizzare il menu a comparsa. Fai clic sull’**icona a forma di chiave inglese** nel menu per configurare il campo.
 
    1. Apri la **scheda convalide**, contrassegna il campo come **Obbligatorio** e fai clic su **Fine**. Viene visualizzato il messaggio di operazione riuscita.
-
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -140,11 +132,9 @@ In questa lezione, in qualità di utente aziendale, verrà creato un modulo adat
    1. Compila il modulo con dati fittizi.
 
    1. Invia il modulo.
-
       ![](/help/assets/screenshot2028125729.png)
 
    1. Nella scheda Raccoglitore richieste, controlla i dati inviati.
-
       ![](/help/assets/screenshot2028125829.png)
 
 1. Aggiungi interattività al modulo con regole:
@@ -392,7 +382,7 @@ Apporta le modifiche al modulo sul server come utente aziendale e visualizza le 
 
 1. Apri l’interfaccia di gestione di AEM Forms nel browser. <!-- URL is 404. Consider saying the path is for illlustration purposes only. For example, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments). -->
 
-1. Selezionare il modulo **`contactus`** e fare clic su **Modifica.** Il modulo viene aperto nell’editor di moduli adattivi.
+1. Selezionare il modulo **`contactus`** e fare clic su **Modifica.** Apre il modulo nell’editor di moduli adattivi.
 
 
 1. Seleziona il campo **Numero di telefono** e fai clic sull’**icona Modifica (a forma di matita)** nella barra degli strumenti. Se non è possibile visualizzare la barra degli strumenti popup, passare alla modalità Modifica. Fai clic sul pulsante **Modifica** in alto a destra, da sinistra a **Anteprima**.
@@ -515,7 +505,7 @@ dell’interfaccia utente Google Material.
 
 1. Per valutare l’esecuzione della stessa logica di business nella rappresentazione del modulo:
 
-   Fai clic su **Seleziona la casella per ricevere il 5% di sconto**. Opzione successiva **Richiedere il modulo per carta di credito aziendale `We.Finance`?** viene disattivata.
+   Fai clic su **Seleziona la casella per ricevere il 5% di sconto**. Opzione successiva **Richiedere il modulo per la carta di credito aziendale `We.Finance`?** viene disabilitato.
 
    ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
 
@@ -569,32 +559,32 @@ Aggiorna la variante dei componenti nel progetto headless. Per modificare la var
 
 ## Domande frequenti (FAQ)
 
-+++ La procedura guidata per moduli adattivi è disponibile pubblicamente?
++++ La procedura guidata per moduli adattivi è disponibile pubblicamente?  
 
 Sì, è disponibile con AEM Forms as Cloud Service.
 
 +++
 
 
-+++ I componenti core sono disponibili pubblicamente?
++++ I componenti core sono disponibili pubblicamente?  
 
 Sì, i componenti core per moduli adattivi sono disponibili in AEM Forms as Cloud Service.
 
 +++
 
-+++ I moduli headless sono disponibili pubblicamente?
++++ I moduli headless sono disponibili pubblicamente?  
 
 Sì, i moduli headless sono disponibili in AEM Forms as Cloud Service.
 
 +++
 
-+++ I moduli headless richiedono una licenza separata?
++++ I moduli headless richiedono una licenza separata?  
 
 No, i moduli headless utilizzano la stessa metrica del valore di licenza, numero di invii dei moduli.
 
 +++
 
-+++ I componenti core e i moduli headless sono disponibili con AEM 6.5 Forms?
++++ I componenti core e i moduli headless sono disponibili con AEM 6.5 Forms?  
 
 Sì, sia i componenti core per moduli adattivi che i moduli headless sono disponibili in AEM Forms 6.5 Service Pack 16 e versioni successive.
 
@@ -606,14 +596,14 @@ Sì, sia i componenti core per moduli adattivi che i moduli headless sono dispon
 Ora sai come creare moduli adattivi e distribuirli tra i canali con moduli headless. Utilizza queste competenze per creare esperienze di acquisizione dati scalabili e di alta qualità ovunque si trovino gli utenti.
 
 
-## Riferimenti
+## Risorse
 
 * [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
 * [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Aggiornare lo stile per moduli adattivi basati su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
+* [Aggiornare lo stile per AF basato su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
 * [Moduli adattivi headless](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Utilizzo di un kit di avvio per la reazione headless](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Utilizzo di un kit di avvio Headless React](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
