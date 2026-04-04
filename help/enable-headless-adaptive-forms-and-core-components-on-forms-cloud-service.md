@@ -9,9 +9,8 @@ level: Beginner, Intermediate
 contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
-hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 6%
@@ -303,7 +302,7 @@ Per abilitare Headless Adaptive Forms per un ambiente AEM Forms as a Cloud Servi
       git push origin
       ```
 
-1. Dopo il commit dei file nell&#39;archivio Git, [Esegui la pipeline](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. Dopo il commit dei file nell&#39;archivio Git, [Esegui la pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    Una volta eseguita correttamente la pipeline, i componenti core Adaptive Forms vengono abilitati per l’ambiente corrispondente. Inoltre, all’ambiente Forms as a Cloud Service vengono aggiunti un modello Forms adattivo (Componenti core) e un tema Canvas 3.0, che offrono opzioni per personalizzare e creare componenti core basati su Adaptive Forms.
 
