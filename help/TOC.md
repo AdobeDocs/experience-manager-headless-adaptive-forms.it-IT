@@ -5,7 +5,7 @@ user-guide-description: Documentazione per i moduli adattivi headless Adobe Expe
 feature: Adaptive Forms
 role: Developer
 index: true
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 4%
@@ -16,12 +16,12 @@ ht-degree: 4%
 # Moduli adattivi headless Adobe Experience Manager {#using}
 
 + [Panoramica](overview.md)
-+ [Panoramica Test](overview-testing.md)
++ {hide-from-toc}[Verifica panoramica](overview-testing.md)
 + [Architettura](architecture.md)
 + [Informazioni sui moduli headless: concetti e domande frequenti](understanding-headless-forms.md)
 + Impostazione rapida {#quick-setup}
    + [Abilitare Headless Adaptive Forms su AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
-   + [Abilitare Forms adattivo headless su AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
+   + {hide-from-toc}[Abilita Forms adattivo headless su AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 + Tutorial {#tutorial}
    + [Creare Forms coinvolgenti utilizzando componenti core e Forms adattivo headless su AEM Forms as a Cloud Service](build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service.md)
    + [Creare Forms coinvolgenti utilizzando componenti core e headless Forms adattivo su AEM 6.5 Forms](build-engaging-forms-using-core-components-and-headless-adaptive-forms-on-aem-65-forms.md)
@@ -29,7 +29,7 @@ ht-degree: 4%
    + [Creare e pubblicare un modulo headless utilizzando un kit di avvio](create-and-publish-a-headless-form.md)
    + [Utilizzare una libreria di react personalizzata per eseguire il rendering di un modulo headless](use-google-material-ui-react-components-to-render-a-headless-form.md)
    + [Utilizzare componenti personalizzati per eseguire il rendering di un modulo headless](developing-for-headless-forms-using-your-own-components.md)
-   + [Utilizzare gli eventi per gestire e inviare i dati del modulo](use-events-to-handle-and-submit-form-data.md)
+   + {hide-from-toc}[Utilizza gli eventi per gestire e inviare i dati del modulo](use-events-to-handle-and-submit-form-data.md)
    + [Best practice per i moduli mobili](mobile-forms-best-practices.md)
 + Creare moduli adattivi headless {#authoring-headless-adaptive-forms}
    + [Creare un modulo adattivo headless tramite l’editor Forms adattivo](create-a-headless-adaptive-form.md)
