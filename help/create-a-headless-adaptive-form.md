@@ -8,9 +8,14 @@ role: Admin, Developer
 level: Beginner, Intermediate
 index: true
 exl-id: 0214dc2e-52ce-40e9-bef3-f4f4a7ff266f
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/-oczwo5CsVwXdzfKgQ9WwM16vBoPY4BVW-02Oeht1A4
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: 1328
 ht-degree: 49%
 
 ---
@@ -45,16 +50,16 @@ Per creare un modulo adattivo utilizzando l’editor di Forms adattivo, è neces
 
 **Per AEM Forms as a Cloud Service**
 
-* Accesso a un [istanza Autore AEM Forms as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service) o a un [ambiente AEM Forms as a Cloud Service SDK](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment) locale.
+* Accesso a un [istanza Autore AEM Forms as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service) o a un [ambiente AEM Forms as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment) locale.
 
 * **Modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l&#39;aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Inoltre, fornisce le opzioni per definire un tema e inviare un’azione. Il tema definisce l’aspetto, mentre l’azione di invio definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il Cloud Service fornisce un modello OOTB, denominato vuoto:
 
    * Il modello `blank Adaptive Forms (Core Components)` è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
-   * È inoltre possibile [creare un nuovo modello di Forms adattivo (Componenti core)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) da zero.
+   * È inoltre possibile [creare un nuovo modello di Forms adattivo (Componenti core)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) da zero.
 
 * **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  Il modello `Canvas` è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
 
-* **Autorizzazioni**: aggiungi gli utenti al gruppo [!DNL forms-users]. I membri del gruppo [!DNL forms-users] dispongono delle autorizzazioni per creare un modulo adattivo. Per un elenco dettagliato dei moduli per gruppi di utenti specifici, vedere [Gruppi e autorizzazioni](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks).
+* **Autorizzazioni**: aggiungi gli utenti al gruppo [!DNL forms-users]. I membri del gruppo [!DNL forms-users] dispongono delle autorizzazioni per creare un modulo adattivo. Per un elenco dettagliato dei moduli per gruppi di utenti specifici, vedere [Gruppi e autorizzazioni](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks).
 
 
 ## Creare un modulo adattivo {#create-an-adaptive-form-components}
@@ -79,7 +84,7 @@ Per creare un modulo adattivo utilizzando l’editor di Forms adattivo, è neces
 
    * **Modello dati modulo**: un [Modello dati modulo](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration) consente di integrare entità e servizi da diverse origini dati a un modulo adattivo. Scegli Modello dati modulo se il modulo adattivo che si sta creando prevede il recupero e la scrittura di dati da e verso più origini dati.
 
-   * **Schema JSON**: [Lo schema JSON](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) Forms adattivo consente l&#39;integrazione diretta con il sistema back-end dell&#39;organizzazione fornendo la possibilità di associare uno schema JSON, che rappresenta la struttura dei dati prodotti o utilizzati. Questa associazione consente agli autori di aggiungere contenuti in modo dinamico al modulo adattivo utilizzando gli elementi dello schema. Durante l’authoring, è possibile accedere rapidamente agli elementi dello schema nella scheda Oggetti modello dati del browser Contenuto. Quando crei un nuovo modulo adattivo, l’editor aggiunge automaticamente tutti i campi.
+   * **Schema JSON**: [Lo schema JSON](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) Forms adattivo consente l&#39;integrazione diretta con il sistema back-end dell&#39;organizzazione fornendo la possibilità di associare uno schema JSON, che rappresenta la struttura dei dati prodotti o utilizzati. Questa associazione consente agli autori di aggiungere contenuti in modo dinamico al modulo adattivo utilizzando gli elementi dello schema. Durante l’authoring, è possibile accedere rapidamente agli elementi dello schema nella scheda Oggetti modello dati del browser Contenuto. Quando crei un nuovo modulo adattivo, l’editor aggiunge automaticamente tutti i campi.
 
    Per impostazione predefinita, tutti i campi dello schema JSON associato vengono selezionati e convertiti automaticamente nei componenti corrispondenti del modulo adattivo, semplificando il processo di authoring. La procedura guidata offre la possibilità di scegliere in modo selettivo quali campi includere nel modulo adattivo tramite l’utilizzo di caselle di controllo.
 
@@ -87,7 +92,7 @@ Per creare un modulo adattivo utilizzando l’editor di Forms adattivo, è neces
 
    * Quando selezioni un modello, l’azione di invio specificata in quel modello viene selezionata automaticamente. Dalla scheda Invio puoi selezionare un’azione di invio diversa. La scheda **[!UICONTROL Invio]** mostra tutte le azioni di invio disponibili.
 
-   * Se nel modello selezionato non è specificata un’azione di invio, è possibile utilizzare la scheda **[!UICONTROL Invio]** per selezionarne una.
+   * Se nel modello selezionato non è specificata un&#39;azione di invio, è possibile utilizzare la scheda **[!UICONTROL Invio]** per selezionarne una.
 
 1. (Facoltativo) Nella scheda **[!UICONTROL Consegna]**, è possibile specificare una data di pubblicazione o di annullamento della pubblicazione per un modulo adattivo.
 

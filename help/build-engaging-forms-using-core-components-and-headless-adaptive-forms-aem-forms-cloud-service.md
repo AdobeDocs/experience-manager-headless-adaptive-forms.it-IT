@@ -5,10 +5,14 @@ description: Creare moduli efficaci utilizzando i componenti core e headless
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 55%
+source-wordcount: 2629
+ht-degree: 52%
 
 ---
 
@@ -178,7 +182,7 @@ Imposta un archivio locale del tema:
 
    ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
 
-1. Sul prompt dei comandi, utilizza il comando seguente per passare alla cartella **c:\git**
+1. Sul prompt dei comandi utilizza il comando seguente per passare alla cartella **c:\git**
 
    ```Shell
    cd c:\git
@@ -407,8 +411,8 @@ Pubblichiamo il modulo aggiornato per propagare le modifiche all’ambiente pubb
 
    ![](/help/assets/screenshot2028120529.png)
 
-1. Apri la finestra del prompt dei comandi utilizzata per avviare il progetto **react-starter-kit-aem-headless forms**, premi **CTRL+C**, quindi 
-immetti **Y** e premi il tasto Invio per terminare il processo npm. È importante interrompere il server npm in modo che non entri in conflitto con il successivo set di esercizi.
+1. Apri la finestra del prompt dei comandi utilizzata per avviare il progetto **react-starter-kit-aem-headless-forms**, premi **CTRL+C**, quindi
+immettere **Y** e premere Invio per terminare il processo npm. È importante interrompere il server npm in modo che non entri in conflitto con il successivo set di esercizi.
 
 1. Chiudi le finestre di Visual Studio Code e il prompt dei comandi.
 
@@ -494,8 +498,8 @@ Per eseguire il rendering del modulo ospitato nell’ambiente di pubblicazione d
 
    ![](/help/assets/screenshot2028127129.png)
 
-   Il comando avvia un server di sviluppo locale che esegue il rendering della definizione del modulo recuperata da AEM in modo headless utilizzando la libreria front-end 
-dell’interfaccia utente Google Material.
+   Il comando avvia un server di sviluppo locale ed esegue il rendering della definizione del modulo recuperata da AEM in modo headless utilizzando Google
+Libreria front-end dell’interfaccia utente dei materiali.
 
    >[!NOTE]
    >
@@ -550,7 +554,8 @@ Aggiorna la variante dei componenti nel progetto headless. Per modificare la var
    ![](/help/assets/screenshot2028127729.png)
 
 
-   Questa modifica viene applicata agli utenti finali senza alcuna modifica alla definizione del modulo nel server di AEM Forms ed è specifica per il canale headless in esame. Ad esempio, un canale web in questo laboratorio.
+   Questa modifica si verifica per gli utenti finali senza alcuna modifica alla definizione del modulo in AEM Forms Server ed è specifica per l’elemento headless
+canale in esame. Ad esempio, un canale web in questo laboratorio.
 
    ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
 
@@ -598,12 +603,12 @@ Ora sai come creare moduli adattivi e distribuirli tra i canali con moduli headl
 
 ## Risorse
 
-* [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [Aggiornare lo stile per AF basato su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Moduli adattivi headless](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Moduli adattivi headless](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Utilizzo di un kit di avvio Headless React](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Utilizzo di un kit di avvio Headless React](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
