@@ -8,9 +8,21 @@ role: Admin, Developer
 level: Beginner, Intermediate
 index: true
 exl-id: 0214dc2e-52ce-40e9-bef3-f4f4a7ff266f
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/-oczwo5CsVwXdzfKgQ9WwM16vBoPY4BVW-02Oeht1A4
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: 1328
 ht-degree: 49%
 
 ---
@@ -87,7 +99,7 @@ Per creare un modulo adattivo utilizzando l’editor di Forms adattivo, è neces
 
    * Quando selezioni un modello, l’azione di invio specificata in quel modello viene selezionata automaticamente. Dalla scheda Invio puoi selezionare un’azione di invio diversa. La scheda **[!UICONTROL Invio]** mostra tutte le azioni di invio disponibili.
 
-   * Se nel modello selezionato non è specificata un’azione di invio, è possibile utilizzare la scheda **[!UICONTROL Invio]** per selezionarne una.
+   * Se nel modello selezionato non è specificata un&#39;azione di invio, è possibile utilizzare la scheda **[!UICONTROL Invio]** per selezionarne una.
 
 1. (Facoltativo) Nella scheda **[!UICONTROL Consegna]**, è possibile specificare una data di pubblicazione o di annullamento della pubblicazione per un modulo adattivo.
 
