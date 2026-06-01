@@ -606,12 +606,12 @@ Ora sai come creare moduli adattivi e distribuirli tra i canali con moduli headl
 
 ## Risorse
 
-* [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [Aggiornare lo stile per AF basato su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Moduli adattivi headless](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Moduli adattivi headless](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Utilizzo di un kit di avvio Headless React](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Utilizzo di un kit di avvio Headless React](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
