@@ -10,18 +10,12 @@ topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
 TQID: https://experienceleague.adobe.com/akgLAvLprxdXwMCXmwobbeFDvQF0rPR2qiENi3dLLDM
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2311
+source-wordcount: 2301
 ht-degree: 39%
 
 ---
@@ -71,15 +65,15 @@ In questa lezione imparerai a conoscere AEM 6.5 Forms navigando nell’interfacc
 
 1. Dopo aver effettuato l’accesso, passa all’interfaccia utente di AEM Forms. Fai clic su **Moduli**.
 
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. Fai clic su **Moduli e documenti**. Ignora eventuali messaggi a comparsa relativi a preferenze o informazioni.
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    Vengono visualizzati tutti i moduli disponibili.
 
-   ![](/help/assets/screenshot2028114029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028114029.png){width="50%"}
 
 ## Lezione 2
 
@@ -96,10 +90,10 @@ In qualità di utente aziendale, utilizzerai l’editor di Forms adattivo e i re
 1. Crea un endpoint di invio per il modulo:
 
    1. Apri <https://pipedream.com/requestbin> in una nuova scheda del browser.
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
    1. Fai clic su **Crea un bin pubblico** e copia l’URL dell’endpoint.
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
    Questo particolare endpoint funge da esempio per l’invio e la visualizzazione dei dati. Nella produzione effettiva, puoi utilizzare il tuo endpoint o le tue origini dati per memorizzare i dati acquisiti.
 
@@ -108,13 +102,13 @@ In qualità di utente aziendale, utilizzerai l’editor di Forms adattivo e i re
    1. Nella scheda del browser utilizzata nella lezione 1, passa all&#39;interfaccia Web di AEM Forms e passa a **Forms** > **Forms e documenti**.
 
    1. Fai clic su **Crea** e seleziona Modulo adattivo.
-      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%"}
 
    1. Seleziona il modello **Vuoto con Componenti core** dalla schermata di selezione del modello come mostrato di seguito e fai clic su **Avanti**.
-      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%"}
 
-   1. Specifica `Contact us` come **Titolo** del modulo. Assicurarsi che il **Nome** del modulo sia `contact-us`.
-      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
+   1. Specifica `Contact us` come **Titolo** del modulo. Assicurati che il **Nome** del modulo sia `contact-us`.
+      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%"}
 
    1. Fai clic su **Crea**. Viene visualizzata una finestra di dialogo.
 
@@ -122,11 +116,11 @@ In qualità di utente aziendale, utilizzerai l’editor di Forms adattivo e i re
 
    1. Apri il browser Componenti e trascina il componente Pannello al centro dello schermo.
 
-      ![](/help/assets/lab65-add-panel.png){width="50%" align="left"}
+      ![](/help/assets/lab65-add-panel.png){width="50%"}
 
    1. Trascina i componenti dal browser Componenti per creare un modulo simile al seguente:
 
-      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
+      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%"}
 
 
    1. Apri il Browser contenuti, fai clic sull&#39;icona delle proprietà del Contenitore della Guida e apri la scheda **Invio**.
@@ -135,7 +129,7 @@ In qualità di utente aziendale, utilizzerai l’editor di Forms adattivo e i re
 
    1. Seleziona l&#39;opzione **Abilita richiesta POST** e specifica l&#39;endpoint REST creato nella lezione 2 nella casella di testo **URL per richiesta POST**, quindi fai clic sull&#39;icona **Fine**.
 
-      ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
+      ![](/help/assets/configure-submit-action.png){width="50%"}
 
 1. Pubblicare un modulo adattivo:
 
@@ -159,7 +153,7 @@ Imposta un archivio locale del tema:
 
 1. Apri il prompt o la shell dei comandi con i diritti di amministratore:
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. Al prompt dei comandi utilizzare il comando seguente per passare alla cartella `c:\git`.
 
@@ -182,19 +176,19 @@ Imposta un archivio locale del tema:
    code .
    ```
 
-   ![](/help/assets/screenshot2028126029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126029.png){width="50%"}
 
 1. Seleziona **Considera affidabili gli autori di tutti i file presenti nella cartella principale** e fai clic su **Sì, considero affidabili gli autori**.
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. Rinominare il file `env_template` in .env.  Per rinominare il file, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona l’opzione **Rinomina**.
 
-   ![](/help/assets/screenshot2028116429.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="30%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. Imposta i seguenti valori per le variabili nel file .env e salva il file:
 
@@ -235,12 +229,12 @@ Imposta un archivio locale del tema:
    >Se si verifica una schermata vuota nel browser dopo aver eseguito il comando `npm run live` per più di 3-4 minuti, modificare `localhost` nell&#39;URL del browser in 127.0.0.1 e premere **Invio**.
 
 
-   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%" align="left"}
+   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%"}
 
 
 1. In Visual Studio Code, apri il file `PROJECT\src\site\_variables.scss`. Nota che il colore `$error` è una tonalità di rosso.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. Nel browser, invia il modulo per visualizzare il colore rosso nel campo **Nome**.
 
@@ -271,7 +265,7 @@ Configurare un archivio locale utilizzando il progetto iniziale React:
 
 1. Apri il prompt dei comandi utilizzando i diritti di amministratore.
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. Al prompt dei comandi utilizzare il comando seguente per passare alla cartella `c:\git`.
 
@@ -300,13 +294,13 @@ Configurare un archivio locale utilizzando il progetto iniziale React:
 
    Si apre la finestra di Visual Studio Code.
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 Per eseguire il rendering del modulo in hosting nell’ambiente di pubblicazione:
 
 1. Rinominare il file env_template nel file env. Per rinominarlo, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona l’opzione **Rinomina**.
 
-   ![](/help/assets/screenshot2028117629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="30%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -355,7 +349,7 @@ Apporta le modifiche al modulo sul server come utente aziendale e visualizza le 
 
 1. Selezionare il campo **Contatto** e fare clic sull&#39;icona **Modifica (icona a forma di matita)** nella barra degli strumenti. Se non è possibile visualizzare la barra degli strumenti popup, passare alla modalità Modifica. Fai clic sul pulsante **Modifica** in alto a destra, a sinistra del pulsante **Anteprima**.
 
-   ![](/help/assets/change-field-title.png){width="50%" align="left"}
+   ![](/help/assets/change-field-title.png){width="50%"}
 
 1. Cambia l&#39;etichetta in **Mobile Number**. Fai clic su uno spazio vuoto nel modulo per salvare le modifiche apportate.
 
@@ -397,7 +391,7 @@ Configurate un repository locale utilizzando il progetto iniziale dell&#39;inter
 
 1. Apri il prompt dei comandi utilizzando i diritti di amministratore.
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. Al prompt dei comandi utilizzare il comando seguente per passare alla cartella `c:\git`.
 
@@ -435,7 +429,7 @@ Per eseguire il rendering del modulo in hosting nell’ambiente di pubblicazione
 
 1. Rinomina il file **env_template** nel file **.env**. Per rinominarlo, fai clic con il pulsante destro del mouse sul file **env_template** e seleziona **Rinomina**.
 
-   ![](/help/assets/screenshot2028126629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="30%"}
 
 1. Imposta i seguenti valori per le variabili nel file .env. Dopo aver aggiornato le variabili, salva il file. Utilizza la combinazione di tasti **CTRL+S** per salvare il file.
 
@@ -506,7 +500,7 @@ Aggiorna la variante dei componenti nel progetto headless. Per modificare la var
 
 1. Aggiorna il browser, se non si aggiorna automaticamente, per vedere che il componente di input del testo utilizza una variante diversa.
 
-   ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127729.png){width="50%"}
 
 
    Questa modifica si verifica per gli utenti finali senza alcuna modifica alla definizione del modulo in AEM Forms Server ed è specifica per l’elemento headless
@@ -540,12 +534,12 @@ Ora sai come creare moduli adattivi e distribuirli tra i canali con moduli headl
 
 ## Risorse
 
-* [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [Introduzione ai componenti core per moduli adattivi](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Creare un modulo adattivo utilizzando i componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [Aggiornare lo stile per AF basato su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Forms adattivo headless](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Forms adattivo headless](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Utilizzo di un kit di avvio Headless React](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Utilizzo di un kit di avvio Headless React](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
