@@ -10,10 +10,18 @@ keywords: CMS headless, moduli adattivi, interfaccia utente headless, CMS headfu
 hide: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
 TQID: https://experienceleague.adobe.com/HMhHwfjQTZe2BaoMbMilfOJ0-GZrZsHTGjTBqeU-ORM
-product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: f013e6ab-27b8-4645-b5a7-31ffa474d04f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+  - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: cc2553bb4b16ea8c31664c227921c4e91d1c7a62
 workflow-type: tm+mt
 source-wordcount: 331
@@ -32,7 +40,7 @@ I moduli adattivi headless consentono di effettuare le seguenti operazioni:
 * Creare moduli multicanale di alta qualità nel linguaggio di programmazione desiderato.
 * Integra moduli in modo nativo nelle app desktop e mobili, nei siti Web e nelle applicazioni di chat.
 * Riutilizzare i componenti dell’interfaccia utente proprietari con le applicazioni Forms.
-* Utilizzo della potenza [ di Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Utilizzo della potenza [&#x200B; di Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 Inoltre, puoi sviluppare i tuoi componenti per eseguire il rendering di un modulo utilizzando qualsiasi framework di interfaccia utente e linguaggio di programmazione a tua scelta. Puoi anche utilizzare i componenti React disponibili come predefiniti per il rendering di un modulo adattivo headless.
 
