@@ -9,7 +9,6 @@ level: Beginner, Intermediate
 contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
-exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
 TQID: https://experienceleague.adobe.com/T5J7Am-NsZ-hzZkRRg3LEk0anMjhXaEznf1bijy2H-Q
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
@@ -19,12 +18,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: cc2553bb4b16ea8c31664c227921c4e91d1c7a62
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+source-git-commit: 64fe5704fcd6ace7461a02007d99710233b74d22
 workflow-type: tm+mt
-source-wordcount: 943
+source-wordcount: 946
 ht-degree: 6%
 
 ---
+
 
 # Abilitare Forms adattivo headless su AEM Forms as a Cloud Service {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
@@ -33,23 +34,18 @@ L’abilitazione di Headless Adaptive Forms su AEM Forms as a Cloud Service cons
 ## Considerazioni
 
 * Quando crei un nuovo programma AEM Forms as a Cloud Service, [Headless Adaptive Forms è già abilitato per i tuoi ambienti](#are-adaptive-forms-core-components-enabled-for-my-environment).
-
 * Se esegui un programma Forms as a Cloud Service precedente in cui i Componenti core sono [non abilitati](#enable-components), prima [aggiungi le dipendenze dei Componenti core Forms adattivi](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) all&#39;archivio Cloud Service. Distribuisci l’archivio aggiornato in ogni ambiente per abilitare i moduli adattivi headless.
-
 * Se l&#39;ambiente Cloud Service ti consente già di [creare moduli adattivi basati su Componenti core](create-a-headless-adaptive-form.md), i moduli adattivi headless verranno abilitati automaticamente. Puoi quindi distribuire tali moduli come esperienze headless a dispositivi mobili, web, app native o a qualsiasi servizio che li richieda.
 
 >[!NOTE]
 >
->
-> Adobe fornisce un [kit di avvio (app React)](create-and-publish-a-headless-form.md) per Forms adattivo per aiutare gli sviluppatori a iniziare rapidamente con lo sviluppo di Forms adattivo headless, senza abilitare il Forms adattivo headless nell&#39;ambiente AEM Forms as a Cloud Service. Puoi abilitare il Forms adattivo headless in un ambiente Forms as a Cloud Service in un secondo momento, dopo [aver sviluppato moduli headless](create-and-publish-a-headless-form.md).
+>Adobe fornisce un [kit di avvio (app React)](create-and-publish-a-headless-form.md) per Forms adattivo per aiutare gli sviluppatori a iniziare rapidamente con lo sviluppo di Forms adattivo headless, senza abilitare il Forms adattivo headless nell&#39;ambiente AEM Forms as a Cloud Service. Puoi abilitare il Forms adattivo headless in un ambiente Forms as a Cloud Service in un secondo momento, dopo [aver sviluppato moduli headless](create-and-publish-a-headless-form.md).
 
 ## Abilitare Headless Adaptive Forms per un ambiente AEM Forms as a Cloud Service
 
 Per abilitare Headless Adaptive Forms per un ambiente AEM Forms as a Cloud Service, effettua le seguenti operazioni, nell’ordine elencato
 
-<!-- Missing image ALT tag -->
-![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
-
+![abilita immagine moduli](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 ## &#x200B;1. Clonare l’archivio Git di AEM Forms as a Cloud Service {#clone-git-repository}
 
@@ -207,18 +203,18 @@ Per abilitare Headless Adaptive Forms per un ambiente AEM Forms as a Cloud Servi
    >[!NOTE]
    >
    >
-   >  Sostituisci `${appId}` con il tuo appId.
+   >Sostituisci `${appId}` con il tuo appId.
    >
-   >  Per trovare `${appId}`, nel file `[AEM Repository Folder]/all/pom.xml`, cerca il termine `-packages/application/install`. Il testo prima del termine `-packages/application/install` è `${appId}`. Il codice seguente, ad esempio, `myheadlessform` è `${appId}`.
+   >Per trovare `${appId}`, nel file `[AEM Repository Folder]/all/pom.xml`, cerca il termine `-packages/application/install`. Il testo prima del termine `-packages/application/install` è `${appId}`. Il codice seguente, ad esempio, `myheadlessform` è `${appId}`.
    >
-   >   ```
-   >             <embedded>
-   >                     <groupId>com.myheadlessform</groupId>
-   >                     <artifactId>myheadlessform.ui.apps<artifactId>
-   >                     <type>zip</type>
-   >                   <target>/apps/myheadlessform-packages/application install</target>
-   >             </embedded>
-   >   ```
+   >```
+   >         <embedded>
+   >                 <groupId>com.myheadlessform</groupId>
+   >                 <artifactId>myheadlessform.ui.apps<artifactId>
+   >                 <type>zip</type>
+   >               <target>/apps/myheadlessform-packages/application install</target>
+   >         </embedded>
+   >```
 
 1. Nella sezione `<dependencies>` del file `[AEM Repository Folder]/all/pom.xml`, aggiungere le dipendenze seguenti e salvare il file:
 
