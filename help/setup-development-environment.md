@@ -3,13 +3,14 @@ title: Configurare l’ambiente di sviluppo per i moduli adattivi headless AEM
 description: Configurare l’ambiente di sviluppo per i moduli adattivi headless AEM
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
-source-git-commit: 893f0428c08e6216cb293ab2f4c427b7d1c26060
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '805'
 ht-degree: 3%
-
 ---
-
 
 # Configurare un ambiente di sviluppo locale {#headless-adaptive-forms-setup-development-environment}
 
@@ -78,7 +79,7 @@ AEM as a Cloud Service SDK (AEM SDK) offre agli sviluppatori un’esperienza loc
 
    >[!NOTE]
    >
-   > Non fare doppio clic sul file .jar per avviarlo. Si verifica un [errore](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
+   > Non fare doppio clic sul file .jar per avviarlo. Si verifica un [errore](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
 
 1. Apri il prompt dei comandi:
    * In Windows, utilizzare l&#39;opzione **Esegui come amministratore** per aprire il prompt dei comandi in modalità avanzata.
@@ -93,7 +94,7 @@ AEM as a Cloud Service SDK (AEM SDK) offre agli sviluppatori un’esperienza loc
    * Lo switch `-r prerelease` abilita le funzionalità disponibili solo nei programmi prerelease e release limitate.
    * È possibile utilizzare `admin` come nome utente e password per lo sviluppo locale per ridurre il carico cognitivo.
 
-   Dopo l’avvio di AEM, la pagina di accesso si apre nel browser web. È inoltre possibile aprire la pagina di accesso per l&#39;istanza di AEM SDK all&#39;indirizzo `http://localhost:<port>` nel browser Web. Ad esempio, [http://localhost:4502](http://localhost:4502).
+   Dopo l’avvio di AEM, la pagina di accesso si apre nel browser web. È inoltre possibile aprire la pagina di accesso per l&#39;istanza di AEM SDK all&#39;indirizzo `http://localhost:<port>` nel browser Web. Ad esempio, [http://localhost:4502](Http://localhost:4502).
 
 1. Accedi all’istanza di authoring. Tocca l&#39;icona ![help](/help/assets/Help-icon.svg), quindi Tocca Informazioni su Adobe Experience Manager e accertati che il numero di versione includa il suffisso PRERELEASE.
 
